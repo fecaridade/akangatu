@@ -1,0 +1,198 @@
+{
+	"name": "Player",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "InicioToqueY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 190981297758312
+		},
+		{
+			"eventType": "variable",
+			"name": "FimY2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 432322238181201
+		},
+		{
+			"eventType": "variable",
+			"name": "InicioToqueX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 223355425027695
+		},
+		{
+			"eventType": "variable",
+			"name": "FimX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 457615006586438
+		},
+		{
+			"eventType": "variable",
+			"name": "ControlePrincipal",
+			"type": "string",
+			"initialValue": "\"Desktop\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 731808516534611
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Controle Inputs",
+			"description": "Grupo para controlar os inputs do personagem além das regras de não sair do mapa e de verificar os objetos  a o seu redor, se é chão ou obstaculo",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 560020419420757,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 330151093071227,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 716486838233702,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 194219879221413,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 272229540890060,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 140544053634623
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 219680882842386,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 896004611263433,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 371562351994165
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 594883096818859,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "player",
+							"sid": 848047714584222,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 607668277131949
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 300494190009423,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "player",
+							"sid": 393310738509239,
+							"parameters": {
+								"object": "Terreno_5",
+								"offset-x": "0",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Terreno_5",
+							"sid": 809019508397154
+						}
+					],
+					"sid": 871949030507129
+				}
+			],
+			"sid": 235966712556881
+		}
+	],
+	"sid": 942069702529560
+}

@@ -1,0 +1,213 @@
+{
+	"name": "Fase 1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Player"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game Manager Fase 1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "Tesouro_Escolhido",
+					"type": "boolean",
+					"initialValue": "false",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 375854868338009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 247793728456982
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Sorteia Lugar Terreno",
+							"sid": 775805906628181
+						}
+					],
+					"sid": 425997354598177
+				},
+				{
+					"functionName": "Sorteia Lugar Terreno",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 269232733992814,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 224650099989674,
+									"parameters": {
+										"object": "Terreno_5"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 203533353350291,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Terreno_5",
+											"sid": 921230712322034,
+											"parameters": {
+												"instance-variable": "Item",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 722014796985823,
+											"parameters": {
+												"variable": "Tesouro_Escolhido",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 476698821650178
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 127289099095449,
+											"parameters": {
+												"variable": "Tesouro_Escolhido"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Terreno_5",
+											"sid": 186374967832868,
+											"parameters": {
+												"instance-variable": "Item",
+												"value": "choose(1,2,3,4)"
+											}
+										}
+									],
+									"sid": 995142338570713,
+									"isOrBlock": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 409283614002030,
+											"parameters": {
+												"variable": "Tesouro_Escolhido"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Terreno_5",
+											"sid": 823335124630348,
+											"parameters": {
+												"instance-variable": "Item",
+												"value": "choose(2,3,4)"
+											}
+										}
+									],
+									"sid": 912237847914839,
+									"isOrBlock": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Terreno_5",
+							"sid": 784204000369634
+						}
+					],
+					"actions": [],
+					"sid": 998210845751662,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Terreno_5",
+									"sid": 932237000213777,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 566464489261809,
+									"parameters": {
+										"type": "log",
+										"message": "\"Achou o Tesouro\""
+									}
+								}
+							],
+							"sid": 532149928122685
+						}
+					]
+				}
+			],
+			"sid": 735723808141753
+		},
+		{
+			"functionName": "Achou_Tesouro",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 278467588391179
+		}
+	],
+	"sid": 192379346921337
+}

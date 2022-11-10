@@ -1,0 +1,65 @@
+{
+	"name": "Terreno_4",
+	"plugin-id": "Sprite",
+	"sid": 305056561691702,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Tipo",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 892186243798450
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4975764,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.984375,
+								0,
+								0.984375,
+								0.5,
+								0.984375,
+								0.984375,
+								0.5,
+								0.984375,
+								0,
+								0.984375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 179070785346692,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
