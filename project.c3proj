@@ -94,7 +94,9 @@
 			"player",
 			"Keyboard",
 			"Touch",
-			"borda_de_mapa"
+			"borda_de_mapa",
+			"Fundo_Vitoria",
+			"ItemAchado"
 		],
 		"subfolders": []
 	},
@@ -108,7 +110,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Fase 1",
+			"Carrega Objetos"
 		],
 		"subfolders": []
 	},
@@ -343,5 +346,5 @@
 	},
 	"viewportWidth": 575,
 	"viewportHeight": 445,
-	"firstLayout": null
+	"firstLayout": "Fase 1"
 }

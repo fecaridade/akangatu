@@ -6,22 +6,42 @@
 			"includeSheet": "Player"
 		},
 		{
+			"eventType": "variable",
+			"name": "Tipo_Tesouro",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 615287104932439
+		},
+		{
+			"eventType": "variable",
+			"name": "Tesouro_Escolhido",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 282736376625655
+		},
+		{
+			"eventType": "variable",
+			"name": "auxiliar_escolhido",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 816278690150523
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Game Manager Fase 1",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "variable",
-					"name": "Tesouro_Escolhido",
-					"type": "boolean",
-					"initialValue": "false",
-					"comment": "",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 375854868338009
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -49,7 +69,17 @@
 					"functionParameters": [],
 					"eventType": "function-block",
 					"conditions": [],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 765681340286267,
+							"parameters": {
+								"variable": "auxiliar_escolhido",
+								"value": "choose(1,2,3,4)"
+							}
+						}
+					],
 					"sid": 269232733992814,
 					"children": [
 						{
@@ -71,11 +101,11 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "compare-instance-variable",
-											"objectClass": "Terreno_5",
-											"sid": 921230712322034,
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 608522469499296,
 											"parameters": {
-												"instance-variable": "Item",
+												"variable": "auxiliar_escolhido",
 												"comparison": 0,
 												"value": "1"
 											}
@@ -100,7 +130,7 @@
 										{
 											"id": "compare-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 127289099095449,
+											"sid": 615598844901428,
 											"parameters": {
 												"variable": "Tesouro_Escolhido"
 											},
@@ -109,16 +139,25 @@
 									],
 									"actions": [
 										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 774395377212958,
+											"parameters": {
+												"variable": "auxiliar_escolhido",
+												"value": "choose(1,2,3,4)"
+											}
+										},
+										{
 											"id": "set-instvar-value",
 											"objectClass": "Terreno_5",
-											"sid": 186374967832868,
+											"sid": 465388084489557,
 											"parameters": {
 												"instance-variable": "Item",
-												"value": "choose(1,2,3,4)"
+												"value": "auxiliar_escolhido"
 											}
 										}
 									],
-									"sid": 995142338570713,
+									"sid": 244197032325247,
 									"isOrBlock": true
 								},
 								{
@@ -127,7 +166,7 @@
 										{
 											"id": "compare-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 409283614002030,
+											"sid": 183704367974499,
 											"parameters": {
 												"variable": "Tesouro_Escolhido"
 											}
@@ -135,16 +174,25 @@
 									],
 									"actions": [
 										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 953940528780105,
+											"parameters": {
+												"variable": "auxiliar_escolhido",
+												"value": "choose(2,3,4)"
+											}
+										},
+										{
 											"id": "set-instvar-value",
 											"objectClass": "Terreno_5",
-											"sid": 823335124630348,
+											"sid": 336882800584054,
 											"parameters": {
 												"instance-variable": "Item",
-												"value": "choose(2,3,4)"
+												"value": "auxiliar_escolhido"
 											}
 										}
 									],
-									"sid": 912237847914839,
+									"sid": 426542191703111,
 									"isOrBlock": true
 								}
 							]
@@ -186,6 +234,10 @@
 										"type": "log",
 										"message": "\"Achou o Tesouro\""
 									}
+								},
+								{
+									"callFunction": "Achou_Tesouro",
+									"sid": 293311742006700
 								}
 							],
 							"sid": 532149928122685
@@ -205,7 +257,60 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 573205378173333,
+					"parameters": {
+						"variable": "Tipo_Tesouro",
+						"value": "choose(\"Lança\",\"Artefato\",\"Mascara\")"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 892835448403366,
+					"parameters": {
+						"object-to-create": "Fundo_Vitoria",
+						"layer": "0",
+						"x": "300",
+						"y": "200",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 926843980045048,
+					"parameters": {
+						"object-to-create": "ItemAchado",
+						"layer": "0",
+						"x": "300",
+						"y": "200",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "ItemAchado",
+					"sid": 824004463366001,
+					"parameters": {
+						"animation": "Tipo_Tesouro",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fundo_Vitoria",
+					"sid": 362185883953464,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
 			"sid": 278467588391179
 		}
 	],

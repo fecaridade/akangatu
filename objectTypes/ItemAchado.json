@@ -1,0 +1,91 @@
+{
+	"name": "ItemAchado",
+	"plugin-id": "Sprite",
+	"sid": 173918016616931,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ItemAchado",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 193102590830100
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5350699,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 220540197767610,
+				"name": "Lança",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1508933,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 787298255013824,
+				"name": "Mascara",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2993189,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 865235783907949,
+				"name": "Artefato",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
