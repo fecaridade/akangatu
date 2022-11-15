@@ -1,0 +1,148 @@
+{
+	"name": "Variaveis Globais",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Váriaveis Para Ambiente de Celular"
+		},
+		{
+			"eventType": "variable",
+			"name": "InicioToqueX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 980882757053028
+		},
+		{
+			"eventType": "variable",
+			"name": "InicioToqueY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 320514307953815
+		},
+		{
+			"eventType": "variable",
+			"name": "FimToqueY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 857564315777234
+		},
+		{
+			"eventType": "variable",
+			"name": "FimToqueX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 772395563306127
+		},
+		{
+			"eventType": "comment",
+			"text": "Controle Geral"
+		},
+		{
+			"eventType": "variable",
+			"name": "ControlePrincipal",
+			"type": "string",
+			"initialValue": "\"Desktop\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 568059301804042
+		},
+		{
+			"eventType": "variable",
+			"name": "Volume_Musica",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 655284551172957
+		},
+		{
+			"eventType": "variable",
+			"name": "Volume_Efeitos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 895672063096218
+		},
+		{
+			"eventType": "comment",
+			"text": "Váriaveis de Jogo"
+		},
+		{
+			"eventType": "variable",
+			"name": "BUFF_VELOCIDADE",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 239280489135499
+		},
+		{
+			"eventType": "variable",
+			"name": "DEBUFF_VELOCIDADE",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 481187514486365
+		},
+		{
+			"eventType": "variable",
+			"name": "Tipo_Tesouro",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 399066547092995
+		},
+		{
+			"eventType": "variable",
+			"name": "Tesouro_Escolhido",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 492311186524473
+		},
+		{
+			"eventType": "variable",
+			"name": "Cronometro",
+			"type": "number",
+			"initialValue": "90",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 194915194721347
+		},
+		{
+			"eventType": "variable",
+			"name": "auxiliar_escolhido",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 307257376083899
+		}
+	],
+	"sid": 935804602281701
+}

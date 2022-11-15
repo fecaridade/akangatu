@@ -1,0 +1,121 @@
+{
+	"name": "Mapa_Controller",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 526003885848606,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Tela Inicial\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 948731834792514,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 381383754236153,
+							"parameters": {
+								"key": 13
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 568355937840285,
+							"parameters": {
+								"layout": "Mapa 1"
+							}
+						}
+					],
+					"sid": 847667763221332
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 288321902539978,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Tela GameOver\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 123676456245007,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 496607432515178,
+							"parameters": {
+								"key": 13
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 206663115692763,
+							"parameters": {
+								"layout": "Mapa 1"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 669457223761292
+						}
+					],
+					"sid": 548834691337969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 912624933685944,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 331295286198981,
+							"parameters": {
+								"layout": "Tela Inicial"
+							}
+						}
+					],
+					"sid": 570383070224923
+				}
+			]
+		}
+	],
+	"sid": 241898927658185
+}

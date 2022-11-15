@@ -1,0 +1,171 @@
+{
+	"name": "E_Mapa 3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Player_Controller"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Game_Manager"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game Manager Fase 3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 809701316328067
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 232025303268300,
+							"parameters": {
+								"variable": "Tesouro_Escolhido",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 738614009567586,
+							"parameters": {
+								"variable": "auxiliar_escolhido",
+								"value": "0"
+							}
+						},
+						{
+							"callFunction": "Sorteia Lugar Terreno",
+							"sid": 431206590759358
+						},
+						{
+							"id": "set-text",
+							"objectClass": "cronometroFase1",
+							"sid": 893605773189836,
+							"parameters": {
+								"text": "Cronometro|\"\""
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "player",
+							"sid": 567623766256862,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						}
+					],
+					"sid": 907731515320282
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 251788695839554,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 225267292909228,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "cronometroFase1",
+							"sid": 181209049289687,
+							"parameters": {
+								"text": "Cronometro"
+							}
+						}
+					],
+					"sid": 158009964244039
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 817384171504756,
+							"parameters": {
+								"first-value": "Cronometro",
+								"comparison": 3,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 897751234020291,
+							"parameters": {
+								"layout": "Tela GameOver"
+							}
+						}
+					],
+					"sid": 568160859107750
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Terreno_5",
+							"sid": 111419061032336
+						}
+					],
+					"actions": [],
+					"sid": 530362221862505,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Terreno_5",
+									"sid": 252688101101113,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Achou_Tesouro",
+									"sid": 506080043295642
+								}
+							],
+							"sid": 508099370298054
+						}
+					]
+				}
+			],
+			"sid": 988103944356412
+		}
+	],
+	"sid": 419459487827485
+}

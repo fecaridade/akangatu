@@ -151,10 +151,13 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Player",
-			"Fase 1",
-			"GameOver",
-			"Inicial"
+			"Player_Controller",
+			"E_Mapa 1",
+			"Mapa_Controller",
+			"E_Mapa 2",
+			"Variaveis Globais",
+			"E_Mapa 3",
+			"Game_Manager"
 		],
 		"subfolders": []
 	},
