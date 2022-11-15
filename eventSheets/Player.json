@@ -52,6 +52,26 @@
 			"sid": 731808516534611
 		},
 		{
+			"eventType": "variable",
+			"name": "BUFF_VELOCIDADE",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 860695524456915
+		},
+		{
+			"eventType": "variable",
+			"name": "DEBUFF_VELOCIDADE",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 584900713466797
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controle Inputs",
@@ -70,19 +90,107 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 330151093071227,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"control": "up"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 716486838233702,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 829426157471914,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 805919141412494,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 586491898582443
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 863839948698269
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 876474696154852,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 350178816916599
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 136829782248995,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 499117434483643,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX",
+										"y": "player.TileMovement.GridY-1",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 245517798273871
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 357901157007445
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 468562659778787,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 927514651512134
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -133,12 +241,12 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 880223290042083,
+											"sid": 651729291933590,
 											"parameters": {
 												"object-to-create": "Prticula_terreno",
 												"layer": "1",
-												"x": "player.X+10",
-												"y": "player.Y-15",
+												"x": "player.X+45",
+												"y": "player.Y",
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
@@ -163,19 +271,107 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 272229540890060,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"control": "left"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 140544053634623,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 981035895728776,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 250763953266841,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 748163549684229
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 658709878021798
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 795828705648618,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 382714890716462
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 320374381921962,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 898233432835066,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX-1",
+										"y": "player.TileMovement.GridY",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 794685665037109
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 951108178067129
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 964409398515084,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 965799212356664
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -209,12 +405,12 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 898034894931160,
+											"sid": 721948992845276,
 											"parameters": {
 												"object-to-create": "Prticula_terreno",
 												"layer": "1",
-												"x": "player.X-15",
-												"y": "player.Y-10",
+												"x": "player.X+15",
+												"y": "player.Y+40",
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
@@ -238,19 +434,107 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 896004611263433,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"control": "down"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 371562351994165,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 316700411420097,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 422672488850174,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 775862367890842
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 206355567313100
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 982149951607692,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 643390958989666
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 871780073423757,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 857169212762392,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX",
+										"y": "player.TileMovement.GridY+1",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 301959185509386
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 548315048337353
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 796161836548858,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 696907149189461
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -301,12 +585,12 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 270548554257818,
+											"sid": 928536941110245,
 											"parameters": {
 												"object-to-create": "Prticula_terreno",
 												"layer": "1",
-												"x": "player.X+10",
-												"y": "player.Y+20",
+												"x": "player.X+40",
+												"y": "player.Y+90",
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}
@@ -330,19 +614,107 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "player",
-							"sid": 848047714584222,
-							"behaviorType": "TileMovement",
-							"parameters": {
-								"control": "right"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 607668277131949,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 734108516444617,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 476348520998968,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 718935411844866
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 232308490852340
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 592265569592473,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 374638074087664
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 602123254800473,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 642468411957394,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX+1",
+										"y": "player.TileMovement.GridY",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 469109792389014
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 920846897396091
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 977193072074525,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 294176600705946
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -376,12 +748,12 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 223279228604341,
+											"sid": 108006779897129,
 											"parameters": {
 												"object-to-create": "Prticula_terreno",
 												"layer": "1",
-												"x": "player.X",
-												"y": "player.Y+10",
+												"x": "player.X+80",
+												"y": "player.Y+40",
 												"create-hierarchy": false,
 												"template-name": "\"\""
 											}

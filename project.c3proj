@@ -50,8 +50,6 @@
 			"type": "plugin",
 			"id": "Particles",
 			"name": "Partículas",
-<<<<<<< Updated upstream
-=======
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -60,7 +58,6 @@
 			"type": "plugin",
 			"id": "gamepad",
 			"name": "Gamepad",
->>>>>>> Stashed changes
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -99,10 +96,7 @@
 			"Fundo_Vitoria",
 			"ItemAchado",
 			"Prticula_terreno",
-<<<<<<< Updated upstream
-=======
 			"Gamepad",
->>>>>>> Stashed changes
 			"CronometroFase1"
 		],
 		"subfolders": []
