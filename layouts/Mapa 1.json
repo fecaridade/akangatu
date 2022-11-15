@@ -5667,7 +5667,11 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
+<<<<<<< Updated upstream
 					"uid": 416,
+=======
+					"uid": 417,
+>>>>>>> Stashed changes
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
