@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -87,7 +95,8 @@
 			"borda_de_mapa",
 			"Fundo_Vitoria",
 			"ItemAchado",
-			"Prticula_terreno"
+			"Prticula_terreno",
+			"Gamepad"
 		],
 		"subfolders": []
 	},
