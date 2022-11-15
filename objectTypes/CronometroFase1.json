@@ -1,0 +1,13 @@
+{
+	"name": "CronometroFase1",
+	"plugin-id": "Text",
+<<<<<<< Updated upstream
+	"sid": 938338018850105,
+=======
+	"sid": 793619734462002,
+>>>>>>> Stashed changes
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

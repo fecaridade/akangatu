@@ -4041,8 +4041,8 @@
 						}
 					},
 					"world": {
-						"x": 256,
-						"y": 256,
+						"x": 320,
+						"y": 512,
 						"width": 64,
 						"height": 64,
 						"originX": 0,
@@ -5644,7 +5644,54 @@
 			"name": "Game Events",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "CronometroFase1",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 40,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+<<<<<<< Updated upstream
+					"uid": 416,
+=======
+					"uid": 417,
+>>>>>>> Stashed changes
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 448,
+						"y": 0,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 552585342148154,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
