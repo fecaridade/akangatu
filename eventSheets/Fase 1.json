@@ -270,10 +270,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 892835448403366,
+					"sid": 522344673758567,
 					"parameters": {
 						"object-to-create": "Fundo_Vitoria",
-						"layer": "0",
+						"layer": "4",
 						"x": "300",
 						"y": "200",
 						"create-hierarchy": false,
@@ -283,10 +283,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 926843980045048,
+					"sid": 179458255556950,
 					"parameters": {
 						"object-to-create": "ItemAchado",
-						"layer": "0",
+						"layer": "4",
 						"x": "300",
 						"y": "200",
 						"create-hierarchy": false,
@@ -309,9 +309,60 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "player",
+					"sid": 634595133284150,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"input": "start-ignoring"
+					}
 				}
 			],
 			"sid": 278467588391179
+		},
+		{
+			"functionName": "Quebrou_Terreno",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "posX_terreno",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 567359188249776
+				},
+				{
+					"name": "posY_terreno",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 427923925534464
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 125885801216111,
+					"parameters": {
+						"object-to-create": "Terreno_4",
+						"layer": "1",
+						"x": "posX_terreno",
+						"y": "posY_terreno",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 159526077070044
 		}
 	],
 	"sid": 192379346921337

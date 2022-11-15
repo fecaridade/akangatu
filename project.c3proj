@@ -32,22 +32,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Dictionary",
-			"name": "Dictionary",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Arr",
-			"name": "Array",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -58,6 +42,14 @@
 			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -87,8 +79,6 @@
 			"Debug",
 			"Terreno_2",
 			"Terreno_3",
-			"mapa",
-			"mapa_fase_1",
 			"Terreno_4",
 			"Terreno_5",
 			"player",
@@ -96,7 +86,8 @@
 			"Touch",
 			"borda_de_mapa",
 			"Fundo_Vitoria",
-			"ItemAchado"
+			"ItemAchado",
+			"Prticula_terreno"
 		],
 		"subfolders": []
 	},
@@ -110,8 +101,10 @@
 	},
 	"layouts": {
 		"items": [
-			"Fase 1",
-			"Carrega Objetos"
+			"Mapa 1",
+			"Carrega Objetos",
+			"Mapa 2",
+			"Mapa 3"
 		],
 		"subfolders": []
 	},
@@ -337,14 +330,14 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "percent",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "folders"
 	},
-	"viewportWidth": 575,
-	"viewportHeight": 445,
-	"firstLayout": "Fase 1"
+	"viewportWidth": 1024,
+	"viewportHeight": 1024,
+	"firstLayout": "Mapa 1"
 }

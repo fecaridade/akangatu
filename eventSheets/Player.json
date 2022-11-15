@@ -82,6 +82,73 @@
 						}
 					],
 					"sid": 716486838233702,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 161846820516086,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "up",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "Prticula_terreno",
+									"sid": 509600161913794,
+									"parameters": {
+										"gravity": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Prticula_terreno",
+									"sid": 396578725561084,
+									"parameters": {
+										"speed": "100"
+									}
+								}
+							],
+							"sid": 336455829902967,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 710420254229306,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 880223290042083,
+											"parameters": {
+												"object-to-create": "Prticula_terreno",
+												"layer": "1",
+												"x": "player.X+10",
+												"y": "player.Y-15",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 932558803493659
+								}
+							]
+						}
+					],
 					"isOrBlock": true
 				},
 				{
@@ -107,7 +174,57 @@
 							}
 						}
 					],
-					"sid": 140544053634623
+					"sid": 140544053634623,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 173873298150586,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "left",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 931587250782402,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 900165131713624,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 898034894931160,
+											"parameters": {
+												"object-to-create": "Prticula_terreno",
+												"layer": "1",
+												"x": "player.X-15",
+												"y": "player.Y-10",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 946182427089847
+								}
+							]
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -132,7 +249,74 @@
 							}
 						}
 					],
-					"sid": 371562351994165
+					"sid": 371562351994165,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 565144801941443,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "down",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "Prticula_terreno",
+									"sid": 676875160189715,
+									"parameters": {
+										"gravity": "400"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Prticula_terreno",
+									"sid": 318014138182521,
+									"parameters": {
+										"speed": "100"
+									}
+								}
+							],
+							"sid": 193522368886677,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 672842248165140,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 270548554257818,
+											"parameters": {
+												"object-to-create": "Prticula_terreno",
+												"layer": "1",
+												"x": "player.X+10",
+												"y": "player.Y+20",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 961725317962444
+								}
+							]
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -157,7 +341,57 @@
 							}
 						}
 					],
-					"sid": 607668277131949
+					"sid": 607668277131949,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 126443169216168,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "right",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 194456074609770,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 883236776649600,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 223279228604341,
+											"parameters": {
+												"object-to-create": "Prticula_terreno",
+												"layer": "1",
+												"x": "player.X",
+												"y": "player.Y+10",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 225112455394731
+								}
+							]
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -183,12 +417,54 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Quebrou_Terreno",
+							"sid": 693457646131966,
+							"parameters": [
+								"Terreno_5.X",
+								"Terreno_5.Y"
+							]
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 519543332091604,
+							"parameters": {
+								"animation": "\"Cavando\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "Terreno_5",
 							"sid": 809019508397154
 						}
 					],
 					"sid": 871949030507129
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "player",
+							"sid": 898662458148707,
+							"parameters": {
+								"animation": "\"Cavando\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 863871167434606,
+							"parameters": {
+								"animation": "\"Parado\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 944050166672470
 				}
 			],
 			"sid": 235966712556881
