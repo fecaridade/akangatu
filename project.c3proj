@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -74,6 +82,14 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -97,7 +113,15 @@
 			"ItemAchado",
 			"Prticula_terreno",
 			"Gamepad",
-			"CronometroFase1"
+			"cronometroFase1",
+			"GameOver",
+			"game_over_texto",
+			"TryAgain",
+			"try_again",
+			"game_over",
+			"texto_game_over",
+			"texto_try_again",
+			"instrução_enter"
 		],
 		"subfolders": []
 	},
@@ -114,14 +138,16 @@
 			"Mapa 1",
 			"Carrega Objetos",
 			"Mapa 2",
-			"Mapa 3"
+			"Mapa 3",
+			"Tela GameOver"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
+			"Player",
 			"Fase 1",
-			"Player"
+			"GameOver"
 		],
 		"subfolders": []
 	},

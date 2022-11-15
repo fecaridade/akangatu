@@ -1,0 +1,35 @@
+{
+	"name": "GameOver",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 187948038508054,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 502558491311009,
+					"parameters": {
+						"layout": "Mapa 1"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 223049583497536
+				}
+			],
+			"sid": 745960536765075
+		}
+	],
+	"sid": 911194281514761
+}

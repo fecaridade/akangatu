@@ -1,7 +1,7 @@
 {
-	"name": "cronometroFase1",
+	"name": "game_over_texto",
 	"plugin-id": "Text",
-	"sid": 793619734462002,
+	"sid": 921349828444201,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],

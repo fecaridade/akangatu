@@ -39,7 +39,7 @@
 			"eventType": "variable",
 			"name": "Cronometro",
 			"type": "number",
-			"initialValue": "90",
+			"initialValue": "10",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -68,11 +68,10 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "CronometroFase1",
+							"objectClass": "cronometroFase1",
 							"sid": 839640849703078,
 							"parameters": {
 								"text": "Cronometro|\"\""
-							
 							}
 						}
 					],
@@ -84,7 +83,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 446008142645513,
+							"sid": 110012529438453,
 							"parameters": {
 								"interval-seconds": "1.0"
 							}
@@ -94,7 +93,7 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 597055255697475,
+							"sid": 648599970144966,
 							"parameters": {
 								"variable": "Cronometro",
 								"value": "1"
@@ -102,15 +101,40 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "CronometroFase1",
-							"sid": 454780661679707,
+							"objectClass": "cronometroFase1",
+							"sid": 972986578633490,
 							"parameters": {
 								"text": "Cronometro"
 							}
 						}
 					],
-
-					"sid": 805430237828438
+					"sid": 866497398881300
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 264177713155214,
+							"parameters": {
+								"first-value": "Cronometro",
+								"comparison": 3,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 325832511618552,
+							"parameters": {
+								"layout": "Tela GameOver"
+							}
+						}
+					],
+					"sid": 131005669537887
 				},
 				{
 					"functionName": "Sorteia Lugar Terreno",
