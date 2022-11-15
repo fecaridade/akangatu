@@ -1,0 +1,30 @@
+{
+	"name": "Inicial",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 436888502499445,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 477234251272891,
+					"parameters": {
+						"layout": "Mapa 1"
+					}
+				}
+			],
+			"sid": 220997906417630
+		}
+	],
+	"sid": 241898927658185
+}

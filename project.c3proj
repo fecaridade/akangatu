@@ -114,14 +114,19 @@
 			"Prticula_terreno",
 			"Gamepad",
 			"cronometroFase1",
-			"GameOver",
 			"game_over_texto",
 			"TryAgain",
 			"try_again",
-			"game_over",
+			"game_over_background",
 			"texto_game_over",
 			"texto_try_again",
-			"instrução_enter"
+			"instrução_enter",
+			"inicial_background",
+			"texto_akangatu",
+			"start",
+			"texto_exit",
+			"instrução_exit",
+			"instrução_start"
 		],
 		"subfolders": []
 	},
@@ -139,7 +144,8 @@
 			"Carrega Objetos",
 			"Mapa 2",
 			"Mapa 3",
-			"Tela GameOver"
+			"Tela GameOver",
+			"Tela Inicial"
 		],
 		"subfolders": []
 	},
@@ -147,7 +153,8 @@
 		"items": [
 			"Player",
 			"Fase 1",
-			"GameOver"
+			"GameOver",
+			"Inicial"
 		],
 		"subfolders": []
 	},

@@ -29,6 +29,30 @@
 				}
 			],
 			"sid": 745960536765075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 904963751649288,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 292710243390047,
+					"parameters": {
+						"layout": "Tela Inicial"
+					}
+				}
+			],
+			"sid": 339989704177756
 		}
 	],
 	"sid": 911194281514761
