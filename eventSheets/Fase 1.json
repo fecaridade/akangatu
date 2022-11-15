@@ -36,6 +36,16 @@
 			"sid": 816278690150523
 		},
 		{
+			"eventType": "variable",
+			"name": "Cronometro",
+			"type": "number",
+			"initialValue": "90",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 614768886393782
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Game Manager Fase 1",
@@ -55,9 +65,50 @@
 						{
 							"callFunction": "Sorteia Lugar Terreno",
 							"sid": 775805906628181
+						},
+						{
+							"id": "set-text",
+							"objectClass": "CronometroFase1",
+							"sid": 839640849703078,
+							"parameters": {
+								"text": "Cronometro|\"\""
+							}
 						}
 					],
 					"sid": 425997354598177
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 965731429114454,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 694087118757885,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "CronometroFase1",
+							"sid": 890002531978846,
+							"parameters": {
+								"text": "Cronometro"
+							}
+						}
+					],
+					"sid": 305979191888200
 				},
 				{
 					"functionName": "Sorteia Lugar Terreno",
