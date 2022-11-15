@@ -43,11 +43,7 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-<<<<<<< Updated upstream
 			"sid": 614768886393782
-=======
-			"sid": 574642202715395
->>>>>>> Stashed changes
 		},
 		{
 			"eventType": "group",
@@ -73,15 +69,10 @@
 						{
 							"id": "set-text",
 							"objectClass": "CronometroFase1",
-<<<<<<< Updated upstream
 							"sid": 839640849703078,
 							"parameters": {
 								"text": "Cronometro|\"\""
-=======
-							"sid": 388136514520364,
-							"parameters": {
-								"text": "Cronometro"
->>>>>>> Stashed changes
+							
 							}
 						}
 					],
@@ -93,11 +84,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-<<<<<<< Updated upstream
-							"sid": 965731429114454,
-=======
 							"sid": 446008142645513,
->>>>>>> Stashed changes
 							"parameters": {
 								"interval-seconds": "1.0"
 							}
@@ -107,11 +94,7 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-<<<<<<< Updated upstream
-							"sid": 694087118757885,
-=======
 							"sid": 597055255697475,
->>>>>>> Stashed changes
 							"parameters": {
 								"variable": "Cronometro",
 								"value": "1"
@@ -120,21 +103,14 @@
 						{
 							"id": "set-text",
 							"objectClass": "CronometroFase1",
-<<<<<<< Updated upstream
-							"sid": 890002531978846,
-=======
 							"sid": 454780661679707,
->>>>>>> Stashed changes
 							"parameters": {
 								"text": "Cronometro"
 							}
 						}
 					],
-<<<<<<< Updated upstream
-					"sid": 305979191888200
-=======
+
 					"sid": 805430237828438
->>>>>>> Stashed changes
 				},
 				{
 					"functionName": "Sorteia Lugar Terreno",
