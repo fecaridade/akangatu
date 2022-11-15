@@ -39,7 +39,7 @@
 			"eventType": "variable",
 			"name": "Cronometro",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "90",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

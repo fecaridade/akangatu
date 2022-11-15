@@ -1,7 +1,7 @@
 {
-	"name": "GameOver",
+	"name": "inicial_background",
 	"plugin-id": "Sprite",
-	"sid": 353097132179093,
+	"sid": 681847016072889,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 930946,
+						"imageSpriteId": 3555840,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 970907857527385,
+				"sid": 325822106512318,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
