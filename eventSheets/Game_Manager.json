@@ -145,10 +145,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 660854369440898,
+					"sid": 992495601320480,
 					"parameters": {
 						"variable": "Tipo_Tesouro",
-						"value": "choose(\"Lança\",\"Artefato\",\"Mascara\")"
+						"value": "choose(\"Flauta\", \"Mascara\", \"Cocar\", \"Vasos\", \"Colar\")"
 					}
 				},
 				{
@@ -187,6 +187,18 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 914995178679627,
+					"parameters": {
+						"audio-file": "achou_tesouro",
+						"loop": "not-looping",
+						"volume": "Volume_Efeitos",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Fundo_Vitoria",
 					"sid": 816271377918679,
@@ -196,7 +208,7 @@
 				},
 				{
 					"id": "set-ignoring-input",
-					"objectClass": "player",
+					"objectClass": "Player",
 					"sid": 842163164619716,
 					"behaviorType": "TileMovement",
 					"parameters": {
@@ -209,6 +221,14 @@
 					"sid": 403434635747903,
 					"parameters": {
 						"seconds": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 718148085557525,
+					"parameters": {
+						"layout": "Tela Artefato"
 					}
 				}
 			],
@@ -284,9 +304,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 311190232526805,
+							"sid": 638677877793770,
 							"parameters": {
-								"layout": "Tela GameOver"
+								"layout": "Tela Inicial"
 							}
 						}
 					],

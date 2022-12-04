@@ -1,0 +1,48 @@
+{
+	"name": "Fade",
+	"plugin-id": "Sprite",
+	"sid": 372102127374419,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade_Start",
+			"sid": 818189663379883
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade_End",
+			"sid": 214374918709317
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3312087,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 436682354672689,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

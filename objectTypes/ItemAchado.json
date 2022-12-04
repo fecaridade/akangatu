@@ -19,20 +19,40 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 290,
+						"height": 418,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5350699,
+						"imageSpriteId": 2943202,
+						"collisionPoly": {
+							"points": [
+								0.0034482758620689655,
+								0.15550239234449761,
+								0.5,
+								0.0023923444976076554,
+								0.993103448275862,
+								0.15550239234449761,
+								0.993103448275862,
+								0.5,
+								0.993103448275862,
+								0.8421052631578947,
+								0.5,
+								0.9952153110047847,
+								0.0034482758620689655,
+								0.8421052631578947,
+								0.0034482758620689655,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 220540197767610,
-				"name": "Lança",
+				"name": "Flauta",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -42,14 +62,34 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 290,
+						"height": 418,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1508933,
+						"imageSpriteId": 1872293,
+						"collisionPoly": {
+							"points": [
+								0.0034482758620689655,
+								0.15550239234449761,
+								0.5,
+								0.0023923444976076554,
+								0.993103448275862,
+								0.15550239234449761,
+								0.993103448275862,
+								0.5,
+								0.993103448275862,
+								0.8421052631578947,
+								0.5,
+								0.9952153110047847,
+								0.0034482758620689655,
+								0.8421052631578947,
+								0.0034482758620689655,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -65,20 +105,126 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 512,
+						"height": 512,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2993189,
+						"imageSpriteId": 2419740,
+						"collisionPoly": {
+							"points": [
+								0.171875,
+								0.171875,
+								0.5,
+								0.046875,
+								0.732421875,
+								0.265625,
+								0.732421875,
+								0.5,
+								0.732421875,
+								0.732421875,
+								0.5,
+								0.857421875,
+								0.171875,
+								0.826171875,
+								0.171875,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 865235783907949,
-				"name": "Artefato",
+				"name": "Cocar",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 290,
+						"height": 418,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3486186,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.09808612440191387,
+								0.5,
+								0,
+								0.9103448275862069,
+								0.21291866028708134,
+								0.9103448275862069,
+								0.5,
+								0.9103448275862069,
+								0.784688995215311,
+								0.5,
+								0.937799043062201,
+								0,
+								0.8995215311004785,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 211953434481321,
+				"name": "Vasos",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 290,
+						"height": 418,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3799639,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.0077035782147844584,
+								0.5,
+								0,
+								1,
+								0.14835969872484606,
+								1,
+								0.5,
+								1,
+								0.8487099654311944,
+								0.5,
+								1,
+								0,
+								0.989366085941256,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 278289649904450,
+				"name": "Colar",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

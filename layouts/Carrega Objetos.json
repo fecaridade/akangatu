@@ -39,7 +39,7 @@
 					"type": "ItemAchado",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Lança",
+						"initial-animation": "Flauta",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -52,8 +52,8 @@
 					"world": {
 						"x": 466,
 						"y": 201,
-						"width": 256,
-						"height": 256,
+						"width": 296.96,
+						"height": 428.032,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -67,7 +67,7 @@
 					}
 				},
 				{
-					"type": "Prticula_terreno",
+					"type": "Particula_terreno",
 					"properties": {
 						"rate": 4,
 						"spray-cone": 50,

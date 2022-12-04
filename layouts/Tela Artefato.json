@@ -1,5 +1,5 @@
 {
-	"name": "Tela Inicial",
+	"name": "Tela Artefato",
 	"layers": [
 		{
 			"name": "Background",
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 418,
+					"uid": 448,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -34,93 +34,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "texto_akangatu",
-					"properties": {
-						"text": "Akangatu",
-						"enable-bbcode": true,
-						"font": "fantasy",
-						"size": 60,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 419,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 348.5,
-						"y": 211,
-						"width": 327,
-						"height": 115,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "instrução_start",
-					"properties": {
-						"text": "Press Enter to Start",
-						"enable-bbcode": true,
-						"font": "fantasy",
-						"size": 15,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.3176470588235294,
-							0.30196078431372547,
-							0.30196078431372547,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 427,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 412,
-						"y": 661,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 895795884243341,
+			"sid": 199429310520739,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -154,9 +70,40 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "start",
+					"type": "ItemAchado",
 					"properties": {
-						"text": "Start",
+						"initially-visible": true,
+						"initial-animation": "Flauta",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 449,
+					"instanceVariables": {
+						"ItemAchado": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 512,
+						"y": 364,
+						"width": 296.96,
+						"height": 428.032,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto_artefato",
+					"properties": {
+						"text": "blablalblalblalblablablalbla",
 						"enable-bbcode": true,
 						"font": "fantasy",
 						"size": 30,
@@ -164,9 +111,9 @@
 						"bold": false,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							0.7294117647058823,
+							0.7294117647058823,
+							0.7294117647058823,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -175,14 +122,14 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 420,
+					"uid": 450,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 434.5,
-						"y": 518,
-						"width": 155,
-						"height": 43,
+						"x": 228,
+						"y": 740,
+						"width": 568,
+						"height": 74,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -196,7 +143,7 @@
 					}
 				}
 			],
-			"sid": 202217019265640,
+			"sid": 454453881761710,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -226,61 +173,10 @@
 		},
 		{
 			"name": "Fade",
-			"overriden": 0,
+			"overriden": 1,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "Fade",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": false,
-						"live-preview": false
-					},
-					"uid": 451,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fade_Start": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 0.5,
-								"destroy": false,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"Fade_End": {
-							"properties": {
-								"fade-in-time": 0.5,
-								"wait-time": 0,
-								"fade-out-time": 0,
-								"destroy": false,
-								"enabled": false,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 1024,
-						"height": 1088,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 947739482511538,
+			"instances": [],
+			"sid": 768294163290533,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -306,10 +202,10 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": true
+			"global": false
 		}
 	],
-	"sid": 263079993750373,
+	"sid": 317230529044683,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1024,
