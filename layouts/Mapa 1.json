@@ -5646,7 +5646,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "cronometroFase1",
+					"type": "Cronometro",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,

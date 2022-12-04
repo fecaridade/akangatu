@@ -64,8 +64,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -111,11 +111,10 @@
 			"borda_de_mapa",
 			"Fundo_Vitoria",
 			"ItemAchado",
-			"Prticula_terreno",
+			"Particula_terreno",
 			"Gamepad",
-			"cronometroFase1",
+			"Cronometro",
 			"game_over_texto",
-			"TryAgain",
 			"try_again",
 			"game_over_background",
 			"texto_game_over",
@@ -126,7 +125,9 @@
 			"start",
 			"texto_exit",
 			"instrução_exit",
-			"instrução_start"
+			"instrução_start",
+			"Informaçoes_artefato",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -141,16 +142,18 @@
 	"layouts": {
 		"items": [
 			"Mapa 1",
-			"Carrega Objetos",
 			"Mapa 2",
+			"Tela Artefato",
 			"Mapa 3",
-			"Tela GameOver",
-			"Tela Inicial"
+			"Tela Inicial",
+			"Carrega Objetos",
+			"Tela GameOver"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
+<<<<<<< Updated upstream
 			"Player_Controller",
 			"E_Mapa 1",
 			"Mapa_Controller",
@@ -158,6 +161,13 @@
 			"Variaveis Globais",
 			"E_Mapa 3",
 			"Game_Manager"
+=======
+			"Player",
+			"Fase 1",
+			"GameOver",
+			"Inicial",
+			"Artefato"
+>>>>>>> Stashed changes
 		],
 		"subfolders": []
 	},
@@ -167,7 +177,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "cavando.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 338366368547867,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

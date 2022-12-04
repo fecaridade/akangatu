@@ -4,7 +4,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Controle Inputs",
+			"title": "Keyboard Inputs",
 			"description": "Grupo para controlar os inputs do personagem além das regras de não sair do mapa e de verificar os objetos  a o seu redor, se é chão ou obstaculo",
 			"isActiveOnStart": true,
 			"children": [
@@ -138,7 +138,7 @@
 							"actions": [
 								{
 									"id": "set-gravity",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 509600161913794,
 									"parameters": {
 										"gravity": "0"
@@ -146,7 +146,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 396578725561084,
 									"parameters": {
 										"speed": "100"
@@ -173,7 +173,7 @@
 											"objectClass": "System",
 											"sid": 651729291933590,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+45",
 												"y": "player.Y",
@@ -337,7 +337,7 @@
 											"objectClass": "System",
 											"sid": 721948992845276,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+15",
 												"y": "player.Y+40",
@@ -482,7 +482,7 @@
 							"actions": [
 								{
 									"id": "set-gravity",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 676875160189715,
 									"parameters": {
 										"gravity": "400"
@@ -490,7 +490,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 318014138182521,
 									"parameters": {
 										"speed": "100"
@@ -517,7 +517,7 @@
 											"objectClass": "System",
 											"sid": 928536941110245,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+40",
 												"y": "player.Y+90",
@@ -680,7 +680,7 @@
 											"objectClass": "System",
 											"sid": 108006779897129,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+80",
 												"y": "player.Y+40",
@@ -736,6 +736,18 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 466921723333992,
+							"parameters": {
+								"audio-file": "cavando",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "Terreno_5",
 							"sid": 809019508397154
@@ -770,6 +782,767 @@
 				}
 			],
 			"sid": 235966712556881
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Controle Inputs",
+			"description": "remover depois ",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 523478206853940,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-right"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 463443329178078,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 366242974808845,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 512612718834534,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 440348366455667
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 943418669599352
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 217058955336736,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 565854401312879
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 844331966427273,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 744891977574684,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX+1",
+										"y": "player.TileMovement.GridY",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 426153121268512
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 914222596436371
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 883007148622411,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 675810110098144
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 598762423497683,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "right",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 585511682030772,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 889669950463795,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 847370338343611,
+											"parameters": {
+												"object-to-create": "Particula_terreno",
+												"layer": "1",
+												"x": "player.X+80",
+												"y": "player.Y+40",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 200180466283071
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 260982934262280,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-left"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 984932853787723,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 815545183264977,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 163885960256417,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 102983654051109
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 956183874175825
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 648702248808014,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 454881043867559
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 208558331358188,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 840883527847143,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX-1",
+										"y": "player.TileMovement.GridY",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 198290421339221
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 297178826569479
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 541693865155603,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 399695478891436
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 316110253728394,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "left",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 455209909988057,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 322282902529095,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 150567435838683,
+											"parameters": {
+												"object-to-create": "Particula_terreno",
+												"layer": "1",
+												"x": "player.X+15",
+												"y": "player.Y+40",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 219572648759856
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 352790765387171,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-up"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 100075890419869,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 298088163767446,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 194293997569500,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 983967671577652
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 620594606334887
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 178840318373278,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 180823186859367
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 243381628778310,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 995076913954137,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX",
+										"y": "player.TileMovement.GridY-1",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 306110400062309
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 699701648317611
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 315038497458639,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 426208525459814
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 174522000902572,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "up",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "Particula_terreno",
+									"sid": 629626693842280,
+									"parameters": {
+										"gravity": "0"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Particula_terreno",
+									"sid": 759458461399444,
+									"parameters": {
+										"speed": "100"
+									}
+								}
+							],
+							"sid": 914930846891767,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 959719283328480,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 277242383860674,
+											"parameters": {
+												"object-to-create": "Particula_terreno",
+												"layer": "1",
+												"x": "player.X+45",
+												"y": "player.Y",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 183256569602639
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 668150105347066,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-down"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 346124729392722,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 384507879874499,
+									"parameters": {
+										"variable": "DEBUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 964493878122726,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "128",
+										"y": "128"
+									}
+								}
+							],
+							"sid": 163237958280477
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 763550084258460
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "player",
+									"sid": 305821330328830,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "256",
+										"y": "256"
+									}
+								}
+							],
+							"sid": 695163335491974
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 166098752623026,
+									"parameters": {
+										"variable": "BUFF_VELOCIDADE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-grid-position",
+									"objectClass": "player",
+									"sid": 970633398091603,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "player.TileMovement.GridX",
+										"y": "player.TileMovement.GridY+1",
+										"instant": "instant"
+									}
+								}
+							],
+							"sid": 432767988830989
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 896543614454851
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "player",
+									"sid": 996560610570008,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 154566471460784
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "can-move-direction",
+									"objectClass": "player",
+									"sid": 168984677354379,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"direction": "down",
+										"distance": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "Particula_terreno",
+									"sid": 561608006456071,
+									"parameters": {
+										"gravity": "400"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Particula_terreno",
+									"sid": 921965880011444,
+									"parameters": {
+										"speed": "100"
+									}
+								}
+							],
+							"sid": 607556657841092,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 409673264851967,
+											"parameters": {
+												"interval-seconds": "0.1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 854891453269941,
+											"parameters": {
+												"object-to-create": "Particula_terreno",
+												"layer": "1",
+												"x": "player.X+40",
+												"y": "player.Y+90",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 748582367917392
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 277161897634511,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-a"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "player",
+							"sid": 194023218748035,
+							"parameters": {
+								"object": "Terreno_5",
+								"offset-x": "0",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Quebrou_Terreno",
+							"sid": 789477821548365,
+							"parameters": [
+								"Terreno_5.X",
+								"Terreno_5.Y"
+							]
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "player",
+							"sid": 778608591794574,
+							"parameters": {
+								"animation": "\"Cavando\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 488451422401869,
+							"parameters": {
+								"audio-file": "cavando",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Terreno_5",
+							"sid": 219206883085042
+						}
+					],
+					"sid": 839400653954837
+				}
+			],
+			"sid": 468942110267446
 		}
 	],
 	"sid": 942069702529560
