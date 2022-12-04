@@ -142,6 +142,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 307257376083899
+		},
+		{
+			"eventType": "variable",
+			"name": "TEMPO_BUFF_DEBUFF",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 657379130590287
+		},
+		{
+			"eventType": "variable",
+			"name": "PODE_RECEBER_MODIFICADOR",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 718333332669353
 		}
 	],
 	"sid": 935804602281701

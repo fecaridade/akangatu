@@ -50,10 +50,19 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "cronometroFase1",
+							"objectClass": "cronometroFases",
 							"sid": 893605773189836,
 							"parameters": {
 								"text": "Cronometro|\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 595080457427660,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "90"
 							}
 						},
 						{
@@ -92,7 +101,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "cronometroFase1",
+							"objectClass": "cronometroFases",
 							"sid": 181209049289687,
 							"parameters": {
 								"text": "Cronometro"

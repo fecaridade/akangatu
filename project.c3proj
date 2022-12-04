@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -113,7 +121,7 @@
 			"ItemAchado",
 			"Prticula_terreno",
 			"Gamepad",
-			"cronometroFase1",
+			"cronometroFases",
 			"game_over_texto",
 			"TryAgain",
 			"try_again",
@@ -126,7 +134,10 @@
 			"start",
 			"texto_exit",
 			"instrução_exit",
-			"instrução_start"
+			"instrução_start",
+			"TesteInput",
+			"BUFF_DEBUFF_PROGRESS",
+			"BUFF_TESTE"
 		],
 		"subfolders": []
 	},
@@ -145,7 +156,8 @@
 			"Mapa 2",
 			"Mapa 3",
 			"Tela GameOver",
-			"Tela Inicial"
+			"Tela Inicial",
+			"Teste_Jogo"
 		],
 		"subfolders": []
 	},
@@ -157,7 +169,8 @@
 			"E_Mapa 2",
 			"Variaveis Globais",
 			"E_Mapa 3",
-			"Game_Manager"
+			"Game_Manager",
+			"Teste Jogo"
 		],
 		"subfolders": []
 	},
@@ -384,6 +397,6 @@
 		"exportFileStructure": "folders"
 	},
 	"viewportWidth": 1024,
-	"viewportHeight": 1024,
+	"viewportHeight": 1088,
 	"firstLayout": "Mapa 1"
 }

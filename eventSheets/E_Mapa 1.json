@@ -50,7 +50,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "cronometroFase1",
+							"objectClass": "cronometroFases",
 							"sid": 839640849703078,
 							"parameters": {
 								"text": "Cronometro|\"\""
@@ -92,7 +92,7 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "cronometroFase1",
+							"objectClass": "cronometroFases",
 							"sid": 972986578633490,
 							"parameters": {
 								"text": "Cronometro"

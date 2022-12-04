@@ -22,9 +22,18 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-button-index-pressed",
+							"objectClass": "Gamepad",
+							"sid": 563926544077757,
+							"parameters": {
+								"gamepad": "0",
+								"button-index": "8"
+							}
+						},
+						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 381383754236153,
+							"sid": 505093255165629,
 							"parameters": {
 								"key": 13
 							}
@@ -34,13 +43,14 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 568355937840285,
+							"sid": 614030280138440,
 							"parameters": {
 								"layout": "Mapa 1"
 							}
 						}
 					],
-					"sid": 847667763221332
+					"sid": 934114130206766,
+					"isOrBlock": true
 				}
 			]
 		},
@@ -65,6 +75,15 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-button-index-pressed",
+							"objectClass": "Gamepad",
+							"sid": 245434151643654,
+							"parameters": {
+								"gamepad": "0",
+								"button-index": "8"
+							}
+						},
+						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
 							"sid": 496607432515178,
@@ -88,7 +107,8 @@
 							"sid": 669457223761292
 						}
 					],
-					"sid": 548834691337969
+					"sid": 548834691337969,
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -99,6 +119,15 @@
 							"sid": 912624933685944,
 							"parameters": {
 								"key": 32
+							}
+						},
+						{
+							"id": "on-button-index-pressed",
+							"objectClass": "Gamepad",
+							"sid": 225685836146365,
+							"parameters": {
+								"gamepad": "0",
+								"button-index": "9"
 							}
 						}
 					],
@@ -112,7 +141,8 @@
 							}
 						}
 					],
-					"sid": 570383070224923
+					"sid": 570383070224923,
+					"isOrBlock": true
 				}
 			]
 		}

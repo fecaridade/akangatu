@@ -18,6 +18,15 @@
 							"parameters": {
 								"key": 38
 							}
+						},
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 763189557925519,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-up"
+							}
 						}
 					],
 					"actions": [],
@@ -199,6 +208,15 @@
 							"parameters": {
 								"key": 37
 							}
+						},
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 561635619060276,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-left"
+							}
 						}
 					],
 					"actions": [],
@@ -350,7 +368,8 @@
 								}
 							]
 						}
-					]
+					],
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -361,6 +380,15 @@
 							"sid": 219680882842386,
 							"parameters": {
 								"key": 40
+							}
+						},
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 556356329111384,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-down"
 							}
 						}
 					],
@@ -530,7 +558,8 @@
 								}
 							]
 						}
-					]
+					],
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -541,6 +570,15 @@
 							"sid": 594883096818859,
 							"parameters": {
 								"key": 39
+							}
+						},
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 670173379450715,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-right"
 							}
 						}
 					],
@@ -693,7 +731,8 @@
 								}
 							]
 						}
-					]
+					],
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",
@@ -707,41 +746,60 @@
 							}
 						},
 						{
-							"id": "is-overlapping-at-offset",
-							"objectClass": "player",
-							"sid": 393310738509239,
+							"id": "is-button-down",
+							"objectClass": "Gamepad",
+							"sid": 283078441357377,
 							"parameters": {
-								"object": "Terreno_5",
-								"offset-x": "0",
-								"offset-y": "0"
+								"gamepad": "0",
+								"button": "button-a"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 871949030507129,
+					"children": [
 						{
-							"callFunction": "Quebrou_Terreno",
-							"sid": 693457646131966,
-							"parameters": [
-								"Terreno_5.X",
-								"Terreno_5.Y"
-							]
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "player",
-							"sid": 519543332091604,
-							"parameters": {
-								"animation": "\"Cavando\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Terreno_5",
-							"sid": 809019508397154
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "player",
+									"sid": 410721901070871,
+									"parameters": {
+										"object": "Terreno_5",
+										"offset-x": "0",
+										"offset-y": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Quebrou_Terreno",
+									"sid": 599402290656562,
+									"parameters": [
+										"Terreno_5.X",
+										"Terreno_5.Y"
+									]
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "player",
+									"sid": 537247255768020,
+									"parameters": {
+										"animation": "\"Cavando\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Terreno_5",
+									"sid": 368957329263128
+								}
+							],
+							"sid": 607282537181410
 						}
 					],
-					"sid": 871949030507129
+					"isOrBlock": true
 				},
 				{
 					"eventType": "block",

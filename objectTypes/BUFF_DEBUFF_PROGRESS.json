@@ -1,0 +1,8 @@
+{
+	"name": "BUFF_DEBUFF_PROGRESS",
+	"plugin-id": "progressbar",
+	"sid": 669360508545594,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

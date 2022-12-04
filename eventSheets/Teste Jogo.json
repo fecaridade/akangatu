@@ -1,0 +1,111 @@
+{
+	"name": "Teste Jogo",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BUFF_TESTE",
+					"sid": 638548296960941
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "BUFF_VELOCIDADE",
+					"sid": 569990332094776
+				}
+			],
+			"sid": 142238356798609
+		},
+		{
+			"functionName": "BUFF_VELOCIDADE",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 538069614718449,
+					"parameters": {
+						"variable": "BUFF_VELOCIDADE",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 361236599738615
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "while",
+					"objectClass": "System",
+					"sid": 148793211598037
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 552300103725963,
+					"parameters": {
+						"variable": "BUFF_VELOCIDADE"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 154628725909028,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 933811554195123,
+					"parameters": {
+						"variable": "TEMPO_BUFF_DEBUFF",
+						"comparison": 3,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 315093408658848,
+					"parameters": {
+						"type": "log",
+						"message": "\"rodando\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 848112158306610,
+					"parameters": {
+						"variable": "TEMPO_BUFF_DEBUFF",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BUFF_DEBUFF_PROGRESS",
+					"sid": 498596524588770,
+					"parameters": {
+						"value": "100 - 10*TEMPO_BUFF_DEBUFF"
+					}
+				}
+			],
+			"sid": 759487717800449
+		}
+	],
+	"sid": 293187363615755
+}
