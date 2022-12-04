@@ -49,6 +49,15 @@
 							"sid": 775805906628181
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 475471585006186,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "90"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "cronometroFases",
 							"sid": 839640849703078,
@@ -58,12 +67,18 @@
 						},
 						{
 							"id": "set-ignoring-input",
-							"objectClass": "player",
+							"objectClass": "Player",
 							"sid": 996576567937911,
 							"behaviorType": "TileMovement",
 							"parameters": {
 								"input": "stop-ignoring"
 							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 203753446079219,
+							"behaviorType": "Fade_Start"
 						}
 					],
 					"sid": 425997354598177
@@ -116,6 +131,20 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 599719500257552,
+							"behaviorType": "Fade_End"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 824915619819403,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",

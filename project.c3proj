@@ -64,6 +64,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -72,8 +80,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "progressbar",
-			"name": "Progress bar",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -101,6 +109,14 @@
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "wjc5lq2v77z",
@@ -113,18 +129,17 @@
 			"Terreno_3",
 			"Terreno_4",
 			"Terreno_5",
-			"player",
+			"Player",
 			"Keyboard",
 			"Touch",
 			"borda_de_mapa",
 			"Fundo_Vitoria",
 			"ItemAchado",
-			"Prticula_terreno",
+			"Particula_terreno",
 			"Gamepad",
 			"cronometroFases",
 			"game_over_texto",
-			"TryAgain",
-			"try_again",
+			"Try_again",
 			"game_over_background",
 			"texto_game_over",
 			"texto_try_again",
@@ -137,7 +152,10 @@
 			"instrução_start",
 			"TesteInput",
 			"BUFF_DEBUFF_PROGRESS",
-			"BUFF_TESTE"
+			"BUFF_TESTE",
+			"Texto_artefato",
+			"Fade",
+			"Audio"
 		],
 		"subfolders": []
 	},
@@ -151,8 +169,9 @@
 	},
 	"layouts": {
 		"items": [
-			"Mapa 1",
 			"Carrega Objetos",
+			"Mapa 1",
+			"Tela Artefato",
 			"Mapa 2",
 			"Mapa 3",
 			"Tela GameOver",
@@ -180,7 +199,24 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "cavando.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 618983613980403,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "achou_tesouro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 559637450514092,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

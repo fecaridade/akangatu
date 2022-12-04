@@ -47,7 +47,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 805919141412494,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -70,7 +70,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 876474696154852,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -96,7 +96,7 @@
 							"actions": [
 								{
 									"id": "set-grid-position",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 499117434483643,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -120,7 +120,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 468562659778787,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -135,7 +135,7 @@
 							"conditions": [
 								{
 									"id": "can-move-direction",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 161846820516086,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -147,7 +147,7 @@
 							"actions": [
 								{
 									"id": "set-gravity",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 509600161913794,
 									"parameters": {
 										"gravity": "0"
@@ -155,7 +155,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 396578725561084,
 									"parameters": {
 										"speed": "100"
@@ -182,7 +182,7 @@
 											"objectClass": "System",
 											"sid": 651729291933590,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+45",
 												"y": "player.Y",
@@ -237,7 +237,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 250763953266841,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -260,7 +260,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 795828705648618,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -286,7 +286,7 @@
 							"actions": [
 								{
 									"id": "set-grid-position",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 898233432835066,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -310,7 +310,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 964409398515084,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -325,7 +325,7 @@
 							"conditions": [
 								{
 									"id": "can-move-direction",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 173873298150586,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -355,7 +355,7 @@
 											"objectClass": "System",
 											"sid": 721948992845276,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+15",
 												"y": "player.Y+40",
@@ -410,7 +410,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 422672488850174,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -433,7 +433,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 982149951607692,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -459,7 +459,7 @@
 							"actions": [
 								{
 									"id": "set-grid-position",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 857169212762392,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -483,7 +483,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 796161836548858,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -498,7 +498,7 @@
 							"conditions": [
 								{
 									"id": "can-move-direction",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 565144801941443,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -510,7 +510,7 @@
 							"actions": [
 								{
 									"id": "set-gravity",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 676875160189715,
 									"parameters": {
 										"gravity": "400"
@@ -518,7 +518,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Prticula_terreno",
+									"objectClass": "Particula_terreno",
 									"sid": 318014138182521,
 									"parameters": {
 										"speed": "100"
@@ -545,7 +545,7 @@
 											"objectClass": "System",
 											"sid": 928536941110245,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+40",
 												"y": "player.Y+90",
@@ -600,7 +600,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 476348520998968,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -623,7 +623,7 @@
 							"actions": [
 								{
 									"id": "set-speed",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 592265569592473,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -649,7 +649,7 @@
 							"actions": [
 								{
 									"id": "set-grid-position",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 642468411957394,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -673,7 +673,7 @@
 							"actions": [
 								{
 									"id": "simulate-control",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 977193072074525,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -688,7 +688,7 @@
 							"conditions": [
 								{
 									"id": "can-move-direction",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 126443169216168,
 									"behaviorType": "TileMovement",
 									"parameters": {
@@ -718,7 +718,7 @@
 											"objectClass": "System",
 											"sid": 108006779897129,
 											"parameters": {
-												"object-to-create": "Prticula_terreno",
+												"object-to-create": "Particula_terreno",
 												"layer": "1",
 												"x": "player.X+80",
 												"y": "player.Y+40",
@@ -763,7 +763,7 @@
 							"conditions": [
 								{
 									"id": "is-overlapping-at-offset",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 410721901070871,
 									"parameters": {
 										"object": "Terreno_5",
@@ -783,11 +783,23 @@
 								},
 								{
 									"id": "set-animation",
-									"objectClass": "player",
+									"objectClass": "Player",
 									"sid": 537247255768020,
 									"parameters": {
 										"animation": "\"Cavando\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 634174227156964,
+									"parameters": {
+										"audio-file": "cavando",
+										"loop": "not-looping",
+										"volume": "Volume_Efeitos",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -806,7 +818,7 @@
 					"conditions": [
 						{
 							"id": "on-animation-finished",
-							"objectClass": "player",
+							"objectClass": "Player",
 							"sid": 898662458148707,
 							"parameters": {
 								"animation": "\"Cavando\""
@@ -816,7 +828,7 @@
 					"actions": [
 						{
 							"id": "set-animation",
-							"objectClass": "player",
+							"objectClass": "Player",
 							"sid": 863871167434606,
 							"parameters": {
 								"animation": "\"Parado\"",
