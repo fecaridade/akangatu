@@ -155,7 +155,17 @@
 			"BUFF_TESTE",
 			"Texto_artefato",
 			"Fade",
-			"Audio"
+			"Audio",
+			"novo_terreno_1",
+			"novo_terreno_2",
+			"novo_terreno_3",
+			"novo_terreno_4",
+			"novo_terreno_5",
+			"novo_terreno_6",
+			"novo_terreno_7",
+			"novo_terreno_8",
+			"novo_terreno_9",
+			"novo_terreno_10"
 		],
 		"subfolders": []
 	},
