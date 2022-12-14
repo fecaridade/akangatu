@@ -141,6 +141,44 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Nome_artefato",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 845,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 244.5,
+						"y": 880,
+						"width": 535,
+						"height": 120,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0,
+							0,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 454453881761710,
@@ -214,5 +252,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Mapa_Controller"
+	"eventSheet": "E_Artefato"
 }

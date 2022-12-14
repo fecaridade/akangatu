@@ -206,55 +206,6 @@
 					"isOrBlock": true
 				}
 			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 753647279050750,
-					"parameters": {
-						"first-value": "LayoutName",
-						"comparison": 0,
-						"second-value": "\"Tela Artefato\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "ItemAchado",
-					"sid": 828977368200008,
-					"parameters": {
-						"animation": "Tipo_Tesouro",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 913082706696409,
-					"parameters": {
-						"seconds": "10"
-					}
-				},
-				{
-					"id": "start-fade",
-					"objectClass": "Fade",
-					"sid": 418919820665282,
-					"behaviorType": "Fade_Start"
-				},
-				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 178623702749538,
-					"parameters": {
-						"which": "next"
-					}
-				}
-			],
-			"sid": 943860531418506
 		}
 	],
 	"sid": 241898927658185
