@@ -1,0 +1,284 @@
+{
+	"name": "E_Artefato",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "index_informação",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 737702664392966
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 799204059968858
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "ItemAchado",
+					"sid": 987612547182568,
+					"parameters": {
+						"animation": "Tipo_Tesouro",
+						"from": "beginning"
+					}
+				},
+				{
+					"callFunction": "Nome_peça",
+					"sid": 380366550075096
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nome_artefato",
+					"sid": 765973928577089,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 268015689282623,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Fade",
+					"sid": 381232411773360,
+					"behaviorType": "Fade_Start"
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 529638641867186,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Informacoes_artefato",
+					"sid": 394267431028942,
+					"parameters": {
+						"width": "4",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 419884056300876,
+					"parameters": {
+						"x": "0",
+						"value": "\"Flauta\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 896068461798321,
+					"parameters": {
+						"x": "1",
+						"value": "\"Mascara\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 638070607125011,
+					"parameters": {
+						"x": "2",
+						"value": "\"Cocar\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 431876722148254,
+					"parameters": {
+						"x": "3",
+						"value": "\"Vasos\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 842544459523134,
+					"parameters": {
+						"x": "4",
+						"value": "\"Colar\""
+					}
+				}
+			],
+			"sid": 690114501721397
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Textos artefato",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ItemAchado",
+							"sid": 870770516456632,
+							"parameters": {
+								"animation": "\"Flauta\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 246762232124483,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 288559380635536
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ItemAchado",
+							"sid": 964350858678050,
+							"parameters": {
+								"animation": "\"Mascara\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 986118443631737,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 238886204242101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ItemAchado",
+							"sid": 623260187902642,
+							"parameters": {
+								"animation": "\"Cocar\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 371246698831206,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "2"
+							}
+						}
+					],
+					"sid": 737382228167948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ItemAchado",
+							"sid": 173050022767204,
+							"parameters": {
+								"animation": "\"Vasos\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 688955510117096,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 802689293029521
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "ItemAchado",
+							"sid": 949145271339895,
+							"parameters": {
+								"animation": "\"Colar\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 321611282541753,
+							"parameters": {
+								"variable": "auxiliar_escolhido",
+								"value": "4"
+							}
+						}
+					],
+					"sid": 612008041892778
+				}
+			],
+			"sid": 210628782624315
+		},
+		{
+			"functionName": "Nome_peça",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Nome_artefato",
+					"sid": 693207545217043,
+					"parameters": {
+						"text": "Informacoes_artefato.At(index_informação)"
+					}
+				}
+			],
+			"sid": 403946254129567
+		}
+	],
+	"sid": 392676886660029
+}

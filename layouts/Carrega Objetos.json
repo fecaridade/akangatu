@@ -142,7 +142,18 @@
 		}
 	],
 	"sid": 156071951739721,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Informacoes_artefato",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 844,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1150,
 	"height": 890,
