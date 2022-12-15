@@ -5556,8 +5556,8 @@
 					"world": {
 						"x": 576,
 						"y": 960,
-						"width": 50,
-						"height": 66,
+						"width": 48,
+						"height": 64,
 						"originX": -0.1,
 						"originY": 0,
 						"color": [

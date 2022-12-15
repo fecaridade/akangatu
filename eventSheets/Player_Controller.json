@@ -126,6 +126,15 @@
 									"parameters": {
 										"control": "up"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 196815522028362,
+									"parameters": {
+										"animation": "\"Andando_costas\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 927514651512134
@@ -498,6 +507,15 @@
 									"parameters": {
 										"control": "down"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 415601013910727,
+									"parameters": {
+										"animation": "\"Andando_frente\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 696907149189461
@@ -692,9 +710,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 685998507217551,
+									"sid": 605091989743752,
 									"parameters": {
-										"animation": "\"Andando_esquerda\"",
+										"animation": "\"Andando_direita\"",
 										"from": "beginning"
 									}
 								}
