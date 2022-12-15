@@ -36,48 +36,6 @@
 					}
 				},
 				{
-					"type": "texto_akangatu",
-					"properties": {
-						"text": "Akangatu",
-						"enable-bbcode": true,
-						"font": "fantasy",
-						"size": 60,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 419,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 348.5,
-						"y": 211,
-						"width": 327,
-						"height": 115,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "instrução_start",
 					"properties": {
 						"text": "Press Enter to Start",
@@ -194,6 +152,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Nome_akangatu",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 849,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 512,
+						"y": 253,
+						"width": 360,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 202217019265640,
@@ -269,71 +256,6 @@
 						"height": 1088,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "novo_terreno_1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 453,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": -64,
-						"y": 384,
-						"width": 32,
-						"height": 32,
-						"originX": 0,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Nome_akangatu",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 849,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 350,
-						"y": 428,
-						"width": 256,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -24,46 +24,46 @@
 				{
 					"id": "set-at-x",
 					"objectClass": "Informacoes_artefato",
-					"sid": 459279807028434,
+					"sid": 148274251721790,
 					"parameters": {
 						"x": "0",
-						"value": "\"Nome artefato\""
+						"value": "\"Informações do artefato\""
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "Informacoes_artefato",
-					"sid": 565527888148550,
+					"sid": 804883454611670,
 					"parameters": {
 						"x": "1",
-						"value": "\"Mascara\""
+						"value": "\"Informações do artefato\""
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "Informacoes_artefato",
-					"sid": 125098356323770,
+					"sid": 204550326054322,
 					"parameters": {
 						"x": "2",
-						"value": "\"Cocar\""
+						"value": "\"Informações do artefato\""
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "Informacoes_artefato",
-					"sid": 730774543667789,
+					"sid": 529053904267818,
 					"parameters": {
 						"x": "3",
-						"value": "\"Vasos\""
+						"value": "\"Informações do artefato\""
 					}
 				},
 				{
 					"id": "set-at-x",
 					"objectClass": "Informacoes_artefato",
-					"sid": 195602696035749,
+					"sid": 213748243253809,
 					"parameters": {
 						"x": "4",
-						"value": "\"Colar\""
+						"value": "\"Informações do artefato\""
 					}
 				},
 				{
