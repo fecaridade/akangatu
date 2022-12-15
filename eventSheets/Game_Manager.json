@@ -343,9 +343,9 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 919947616622323,
+					"sid": 526248686535327,
 					"parameters": {
-						"object-to-create": "Terreno_4",
+						"object-to-create": "novo_terreno_9",
 						"layer": "1",
 						"x": "posX_terreno",
 						"y": "posY_terreno",

@@ -95,14 +95,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
@@ -183,7 +175,8 @@
 			"novo_terreno_9",
 			"novo_terreno_10",
 			"Informacoes_artefato",
-			"Nome_artefato"
+			"Nome_artefato",
+			"Nome_akangatu"
 		],
 		"subfolders": []
 	},
