@@ -176,7 +176,11 @@
 			"novo_terreno_10",
 			"Informacoes_artefato",
 			"Nome_artefato",
-			"Nome_akangatu"
+			"Nome_akangatu",
+			"novo_terreno_quina_dir",
+			"novo_terreno_quina_esq",
+			"novo_terreno_cima",
+			"novo_terreno_baixo"
 		],
 		"subfolders": []
 	},
@@ -190,13 +194,13 @@
 	},
 	"layouts": {
 		"items": [
+			"Tela Inicial",
 			"Carrega Objetos",
 			"Mapa 1",
 			"Tela Artefato",
 			"Mapa 2",
 			"Mapa 3",
 			"Tela GameOver",
-			"Tela Inicial",
 			"Teste_Jogo"
 		],
 		"subfolders": []

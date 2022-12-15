@@ -316,6 +316,15 @@
 									"parameters": {
 										"control": "left"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 701999666304138,
+									"parameters": {
+										"animation": "\"Andando_esquerda\"",
+										"from": "beginning"
+									}
 								}
 							],
 							"sid": 965799212356664
@@ -678,6 +687,15 @@
 									"behaviorType": "TileMovement",
 									"parameters": {
 										"control": "right"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 685998507217551,
+									"parameters": {
+										"animation": "\"Andando_esquerda\"",
+										"from": "beginning"
 									}
 								}
 							],
