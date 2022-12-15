@@ -162,6 +162,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 718333332669353
+		},
+		{
+			"eventType": "variable",
+			"name": "index_informação",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 617357875122855
 		}
 	],
 	"sid": 935804602281701

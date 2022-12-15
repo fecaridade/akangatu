@@ -1,17 +1,9 @@
 {
-	"name": "Terreno_5",
+	"name": "Nome_akangatu",
 	"plugin-id": "Sprite",
-	"sid": 508596357090820,
+	"sid": 942507757167468,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Item",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 942539063099352
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -19,31 +11,27 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
+						"width": 256,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7620684,
+						"imageSpriteId": 6526185,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
+								0.0390625,
+								0.3125,
+								0.9765625,
+								0.15625,
+								0.99609375,
 								0.5,
-								0,
-								0.984375,
-								0,
-								0.984375,
-								0.5,
-								0.984375,
-								0.984375,
-								0.5,
-								0.984375,
-								0,
-								0.984375,
-								0,
+								0.98828125,
+								0.90625,
+								0.0234375,
+								0.78125,
+								0.0234375,
 								0.5
 							]
 						},
@@ -51,7 +39,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 984692524184537,
+				"sid": 245961897864141,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

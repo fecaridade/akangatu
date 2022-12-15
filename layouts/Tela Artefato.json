@@ -101,78 +101,40 @@
 					}
 				},
 				{
-					"type": "Texto_artefato",
+					"type": "Nome_artefato",
 					"properties": {
-						"text": "blablalblalblalblablablalbla",
+						"text": "Text",
 						"enable-bbcode": true,
-						"font": "fantasy",
+						"font": "Arial",
 						"size": 30,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
-							0.7294117647058823,
-							0.7294117647058823,
-							0.7294117647058823,
+							0.7725490196078432,
+							0.7686274509803922,
+							0.7686274509803922,
 							1
 						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 450,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 228,
-						"y": 740,
-						"width": 568,
-						"height": 74,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Nome_artefato",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": false,
 						"origin": "top-left"
 					},
-					"uid": 845,
+					"uid": 846,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 244.5,
-						"y": 880,
-						"width": 535,
-						"height": 120,
+						"x": 277,
+						"y": 689,
+						"width": 470,
+						"height": 143,
 						"originX": 0,
 						"originY": 0,
 						"color": [
-							0,
-							0,
+							1,
+							1,
 							1,
 							1
 						],

@@ -2,16 +2,6 @@
 	"name": "E_Artefato",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "index_informação",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 737702664392966
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -22,6 +12,61 @@
 			],
 			"actions": [
 				{
+					"id": "set-size",
+					"objectClass": "Informacoes_artefato",
+					"sid": 449469590558942,
+					"parameters": {
+						"width": "5",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 459279807028434,
+					"parameters": {
+						"x": "0",
+						"value": "\"Nome artefato\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 565527888148550,
+					"parameters": {
+						"x": "1",
+						"value": "\"Mascara\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 125098356323770,
+					"parameters": {
+						"x": "2",
+						"value": "\"Cocar\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 730774543667789,
+					"parameters": {
+						"x": "3",
+						"value": "\"Vasos\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 195602696035749,
+					"parameters": {
+						"x": "4",
+						"value": "\"Colar\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "ItemAchado",
 					"sid": 987612547182568,
@@ -31,13 +76,13 @@
 					}
 				},
 				{
-					"callFunction": "Nome_peça",
+					"callFunction": "Seta_nome_peça",
 					"sid": 380366550075096
 				},
 				{
 					"id": "set-visible",
 					"objectClass": "Nome_artefato",
-					"sid": 765973928577089,
+					"sid": 226965683748087,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -62,61 +107,6 @@
 					"sid": 529638641867186,
 					"parameters": {
 						"which": "next"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "Informacoes_artefato",
-					"sid": 394267431028942,
-					"parameters": {
-						"width": "4",
-						"height": "1",
-						"depth": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 419884056300876,
-					"parameters": {
-						"x": "0",
-						"value": "\"Flauta\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 896068461798321,
-					"parameters": {
-						"x": "1",
-						"value": "\"Mascara\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 638070607125011,
-					"parameters": {
-						"x": "2",
-						"value": "\"Cocar\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 431876722148254,
-					"parameters": {
-						"x": "3",
-						"value": "\"Vasos\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 842544459523134,
-					"parameters": {
-						"x": "4",
-						"value": "\"Colar\""
 					}
 				}
 			],
@@ -258,7 +248,7 @@
 			"sid": 210628782624315
 		},
 		{
-			"functionName": "Nome_peça",
+			"functionName": "Seta_nome_peça",
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
@@ -271,7 +261,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "Nome_artefato",
-					"sid": 693207545217043,
+					"sid": 644588234657084,
 					"parameters": {
 						"text": "Informacoes_artefato.At(index_informação)"
 					}
