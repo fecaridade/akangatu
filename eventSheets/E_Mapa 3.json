@@ -11,8 +11,8 @@
 		},
 		{
 			"eventType": "group",
-			"disabled": false,
-			"title": "Game Manager Fase 3",
+			"disabled": true,
+			"title": "Game Manager Fase 3 old",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -81,7 +81,8 @@
 							"behaviorType": "Fade_Start"
 						}
 					],
-					"sid": 907731515320282
+					"sid": 907731515320282,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -114,7 +115,8 @@
 							}
 						}
 					],
-					"sid": 158009964244039
+					"sid": 158009964244039,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -154,7 +156,8 @@
 							}
 						}
 					],
-					"sid": 568160859107750
+					"sid": 568160859107750,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -167,6 +170,7 @@
 					],
 					"actions": [],
 					"sid": 530362221862505,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -188,12 +192,309 @@
 									"sid": 506080043295642
 								}
 							],
-							"sid": 508099370298054
+							"sid": 508099370298054,
+							"disabled": true
 						}
 					]
 				}
 			],
 			"sid": 988103944356412
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Game Manager Fase 3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 213398121612324
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 667454107334085,
+							"parameters": {
+								"variable": "Tesouro_Escolhido",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 573798076467511,
+							"parameters": {
+								"variable": "auxiliar_escolhido",
+								"value": "0"
+							}
+						},
+						{
+							"callFunction": "Sorteia Lugar Terreno",
+							"sid": 829990807747073
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 766090367937864,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "60"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "cronometroFases",
+							"sid": 740710776570938,
+							"parameters": {
+								"text": "Cronometro|\"\""
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player",
+							"sid": 235649092888420,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 381907221080456,
+							"behaviorType": "Fade_Start"
+						}
+					],
+					"sid": 725981137682836
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 192585779210342,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 128874645421220,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "cronometroFases",
+							"sid": 459474192146935,
+							"parameters": {
+								"text": "Cronometro"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "timer_animado",
+							"sid": 521492462593497,
+							"parameters": {
+								"frame-number": "timer_animado.estado_tempo"
+							}
+						}
+					],
+					"sid": 488463116968831
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 682463762002813,
+							"parameters": {
+								"first-value": "Cronometro",
+								"comparison": 3,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 894322646572141,
+							"behaviorType": "Fade_End"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 758880534687438,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 685053380444289,
+							"parameters": {
+								"layout": "Tela GameOver"
+							}
+						}
+					],
+					"sid": 488766511503572
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "buraco",
+							"sid": 519769854509646
+						}
+					],
+					"actions": [],
+					"sid": 491122905107230,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 764889663536568,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 617273132903141,
+									"parameters": {
+										"type": "log",
+										"message": "\"Achou o Tesouro\""
+									}
+								},
+								{
+									"callFunction": "Achou_Tesouro",
+									"sid": 754222229675394
+								}
+							],
+							"sid": 976019938365655
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 931588419683861,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 375304840677573,
+									"parameters": {
+										"type": "log",
+										"message": "\"Buff Sppeed\""
+									}
+								},
+								{
+									"callFunction": "buff_speed",
+									"sid": 399608129870887
+								}
+							],
+							"sid": 540963579401333
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 589703804070830,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 614280787432048,
+									"parameters": {
+										"type": "log",
+										"message": "\"Buff Tempo\""
+									}
+								},
+								{
+									"callFunction": "buff_tempo",
+									"sid": 164166042381043
+								}
+							],
+							"sid": 476891177181240
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 884556375497103,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 775872628888207,
+									"parameters": {
+										"type": "log",
+										"message": "\"Buff Tempo\""
+									}
+								},
+								{
+									"callFunction": "debuff_speed",
+									"sid": 151658238295569
+								}
+							],
+							"sid": 234152910381207
+						}
+					]
+				}
+			],
+			"sid": 261853133476789
 		}
 	],
 	"sid": 419459487827485

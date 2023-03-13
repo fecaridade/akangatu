@@ -9373,7 +9373,7 @@
 						"y": 960,
 						"width": 48,
 						"height": 64,
-						"originX": 0,
+						"originX": -0.16666666666666666,
 						"originY": 0,
 						"color": [
 							1,
@@ -9428,7 +9428,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 121,
+					"uid": 42,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -9468,7 +9468,7 @@
 						"width": 204,
 						"height": 26,
 						"originX": 0,
-						"originY": -0.38461538461538464,
+						"originY": -0.6153846153846154,
 						"color": [
 							1,
 							1,
