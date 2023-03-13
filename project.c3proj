@@ -151,8 +151,8 @@
 			"novo_terreno_cima",
 			"novo_terreno_baixo",
 			"timer_animado",
-			"background_ui",
-			"buff_debuff"
+			"buff_debuff",
+			"background_ui"
 		],
 		"subfolders": []
 	},

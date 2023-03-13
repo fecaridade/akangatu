@@ -1,7 +1,7 @@
 {
 	"name": "background_ui",
 	"plugin-id": "Sprite",
-	"sid": 755115135769492,
+	"sid": 276648263433156,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 64,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1963609,
+						"imageSpriteId": 8370719,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 207321901498666,
+				"sid": 629058803602736,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
