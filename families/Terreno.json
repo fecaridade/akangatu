@@ -1,0 +1,15 @@
+{
+	"name": "Terreno",
+	"plugin-id": "Sprite",
+	"sid": 296857541767314,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"novo_terreno_6",
+		"novo_terreno_5",
+		"novo_terreno_8",
+		"novo_terreno_7",
+		"novo_terreno_9"
+	]
+}

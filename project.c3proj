@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 31702,
+	"savedWithRelease": 32703,
 	"name": "akangatu",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -8,74 +8,9 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Arr",
+			"name": "Array",
 			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Touch",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Particles",
-			"name": "Particles",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "gamepad",
-			"name": "Gamepad",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "progressbar",
-			"name": "Progress bar",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
-			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -83,39 +18,55 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Arr",
-			"name": "Array",
+			"id": "Browser",
+			"name": "Browser",
 			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "TileMovement",
-			"name": "Tile movement",
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
 			"author": "Scirra",
-			"version": "r317.2",
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Flash",
-			"name": "Flash",
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
 			"bundled": false
 		},
 		{
@@ -123,7 +74,27 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Tile movement",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
 			"bundled": false
 		}
 	],
@@ -136,7 +107,7 @@
 			"Terreno_2",
 			"Terreno_3",
 			"Terreno_4",
-			"Terreno_5",
+			"buraco",
 			"Player",
 			"Keyboard",
 			"Touch",
@@ -159,8 +130,6 @@
 			"instrução_exit",
 			"instrução_start",
 			"TesteInput",
-			"BUFF_DEBUFF_PROGRESS",
-			"BUFF_TESTE",
 			"Texto_artefato",
 			"Fade",
 			"Audio",
@@ -180,7 +149,10 @@
 			"novo_terreno_quina_dir",
 			"novo_terreno_quina_esq",
 			"novo_terreno_cima",
-			"novo_terreno_baixo"
+			"novo_terreno_baixo",
+			"timer_animado",
+			"background_ui",
+			"buff_debuff"
 		],
 		"subfolders": []
 	},
@@ -188,7 +160,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Obstaculos"
+			"Obstaculos",
+			"Terreno"
 		],
 		"subfolders": []
 	},
@@ -450,6 +423,8 @@
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "percent",
 		"preloadSounds": true,

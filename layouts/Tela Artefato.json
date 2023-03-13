@@ -120,7 +120,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": false,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 846,
 					"instanceVariables": {},

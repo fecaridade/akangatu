@@ -3,50 +3,6 @@
 	"events": [
 		{
 			"eventType": "comment",
-			"text": "Váriaveis Para Ambiente de Celular"
-		},
-		{
-			"eventType": "variable",
-			"name": "InicioToqueX",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 980882757053028
-		},
-		{
-			"eventType": "variable",
-			"name": "InicioToqueY",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 320514307953815
-		},
-		{
-			"eventType": "variable",
-			"name": "FimToqueY",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 857564315777234
-		},
-		{
-			"eventType": "variable",
-			"name": "FimToqueX",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 772395563306127
-		},
-		{
-			"eventType": "comment",
 			"text": "Controle Geral"
 		},
 		{
@@ -147,7 +103,7 @@
 			"eventType": "variable",
 			"name": "TEMPO_BUFF_DEBUFF",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "6",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

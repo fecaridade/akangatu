@@ -22,7 +22,7 @@
 							"objectClass": "System",
 							"sid": 224650099989674,
 							"parameters": {
-								"object": "Terreno_5"
+								"object": "buraco"
 							}
 						}
 					],
@@ -33,99 +33,145 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "compare-eventvar",
+									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 608522469499296,
+									"sid": 811568079453764,
 									"parameters": {
-										"variable": "auxiliar_escolhido",
+										"first-value": "buraco.ja_sorteado",
 										"comparison": 0,
-										"value": "1"
+										"second-value": "0"
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 236046623627357,
+							"children": [
 								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 722014796985823,
-									"parameters": {
-										"variable": "Tesouro_Escolhido",
-										"value": "true"
-									}
-								}
-							],
-							"sid": 476698821650178
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 615598844901428,
-									"parameters": {
-										"variable": "Tesouro_Escolhido"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 774395377212958,
-									"parameters": {
-										"variable": "auxiliar_escolhido",
-										"value": "choose(1,2,3,4)"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 838888637520671,
+											"parameters": {
+												"variable": "auxiliar_escolhido",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 773427369667785,
+											"parameters": {
+												"variable": "Tesouro_Escolhido",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "buraco",
+											"sid": 897553776491263,
+											"parameters": {
+												"instance-variable": "ja_sorteado",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 388261035052524
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Terreno_5",
-									"sid": 465388084489557,
-									"parameters": {
-										"instance-variable": "Item",
-										"value": "auxiliar_escolhido"
-									}
-								}
-							],
-							"sid": 244197032325247,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 183704367974499,
-									"parameters": {
-										"variable": "Tesouro_Escolhido"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 953940528780105,
-									"parameters": {
-										"variable": "auxiliar_escolhido",
-										"value": "choose(2,3,4)"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 160616031898352,
+											"parameters": {
+												"variable": "Tesouro_Escolhido"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 518606937438506,
+											"parameters": {
+												"variable": "auxiliar_escolhido",
+												"value": "choose(1,2,3,3,4,4)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "buraco",
+											"sid": 762086005231976,
+											"parameters": {
+												"instance-variable": "Item",
+												"value": "auxiliar_escolhido"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "buraco",
+											"sid": 863143772643059,
+											"parameters": {
+												"instance-variable": "ja_sorteado",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 391995261598155,
+									"isOrBlock": true
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Terreno_5",
-									"sid": 336882800584054,
-									"parameters": {
-										"instance-variable": "Item",
-										"value": "auxiliar_escolhido"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 670310516249139,
+											"parameters": {
+												"variable": "Tesouro_Escolhido"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 222848814448339,
+											"parameters": {
+												"variable": "auxiliar_escolhido",
+												"value": "choose(2,3,4)"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "buraco",
+											"sid": 694637883138679,
+											"parameters": {
+												"instance-variable": "Item",
+												"value": "auxiliar_escolhido"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "buraco",
+											"sid": 170234937634156,
+											"parameters": {
+												"instance-variable": "ja_sorteado",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 430181421832188,
+									"isOrBlock": true
 								}
-							],
-							"sid": 426542191703111,
-							"isOrBlock": true
+							]
 						}
 					]
 				}
@@ -355,6 +401,105 @@
 				}
 			],
 			"sid": 978454628130839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 747607958873596,
+					"parameters": {
+						"interval-seconds": "3.5"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 450550674488271,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 904590631835392,
+							"parameters": {
+								"object": "Terreno"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Terreno",
+							"sid": 455978399546303,
+							"parameters": {
+								"object": "buraco",
+								"layer": "1",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"callFunction": "Sorteia Lugar Terreno",
+							"sid": 404639321557812
+						}
+					],
+					"sid": 913080670237992
+				}
+			]
+		},
+		{
+			"functionName": "buff_tempo",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 432772853475816,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 949032538842184,
+							"parameters": {
+								"first-value": "Cronometro",
+								"comparison": 3,
+								"second-value": "60"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 793443805952818,
+							"parameters": {
+								"variable": "Cronometro",
+								"value": "10"
+							}
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "timer_animado",
+							"sid": 189294889831617,
+							"parameters": {
+								"instance-variable": "estado_tempo",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 668896675691937
+				}
+			]
 		}
 	],
 	"sid": 445023835263366

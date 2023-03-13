@@ -161,7 +161,7 @@
 					"conditions": [
 						{
 							"id": "on-destroyed",
-							"objectClass": "Terreno_5",
+							"objectClass": "buraco",
 							"sid": 784204000369634
 						}
 					],
@@ -173,7 +173,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "Terreno_5",
+									"objectClass": "buraco",
 									"sid": 932237000213777,
 									"parameters": {
 										"instance-variable": "Item",
@@ -189,6 +189,72 @@
 								}
 							],
 							"sid": 532149928122685
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 989072692626131,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Achou_Tesouro",
+									"sid": 949126154819961
+								}
+							],
+							"sid": 794770698614553
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 100249612632466,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Achou_Tesouro",
+									"sid": 860311781307553
+								}
+							],
+							"sid": 741761944612233
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 757210432123277,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Achou_Tesouro",
+									"sid": 567786855159470
+								}
+							],
+							"sid": 959496130177312
 						}
 					]
 				}

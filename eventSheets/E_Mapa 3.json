@@ -161,7 +161,7 @@
 					"conditions": [
 						{
 							"id": "on-destroyed",
-							"objectClass": "Terreno_5",
+							"objectClass": "buraco",
 							"sid": 111419061032336
 						}
 					],
@@ -173,7 +173,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "Terreno_5",
+									"objectClass": "buraco",
 									"sid": 252688101101113,
 									"parameters": {
 										"instance-variable": "Item",

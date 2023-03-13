@@ -8633,34 +8633,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "BUFF_DEBUFF_PROGRESS",
-					"properties": {
-						"value": 0,
-						"maximum": 100,
-						"tooltip": "",
-						"initially-visible": true,
-						"id": "",
-						"class": ""
-					},
-					"uid": 445,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 192,
-						"y": 0,
-						"width": 192,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
 					"type": "cronometroFases",
 					"properties": {
 						"text": "",
@@ -8680,7 +8652,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 417,
 					"instanceVariables": {},
@@ -8737,7 +8710,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -8747,7 +8720,8 @@
 					},
 					"uid": 847,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8768,7 +8742,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -8778,7 +8752,8 @@
 					},
 					"uid": 450,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8799,7 +8774,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -8809,7 +8784,8 @@
 					},
 					"uid": 845,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -8830,7 +8806,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -8840,7 +8816,8 @@
 					},
 					"uid": 848,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -11193,7 +11170,7 @@
 						"y": 960,
 						"width": 48,
 						"height": 64,
-						"originX": -0.1,
+						"originX": 0,
 						"originY": 0,
 						"color": [
 							1,

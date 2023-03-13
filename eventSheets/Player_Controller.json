@@ -2,6 +2,10 @@
 	"name": "Player_Controller",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Variaveis Globais"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Controle Inputs",
@@ -29,7 +33,17 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 673093410210676,
+							"parameters": {
+								"animation": "\"Andando_costas\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 716486838233702,
 					"children": [
 						{
@@ -126,15 +140,6 @@
 									"parameters": {
 										"control": "up"
 									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 196815522028362,
-									"parameters": {
-										"animation": "\"Andando_costas\"",
-										"from": "beginning"
-									}
 								}
 							],
 							"sid": 927514651512134
@@ -228,7 +233,17 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 646948273314995,
+							"parameters": {
+								"animation": "\"Andando_esquerda\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 140544053634623,
 					"children": [
 						{
@@ -325,15 +340,6 @@
 									"parameters": {
 										"control": "left"
 									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 701999666304138,
-									"parameters": {
-										"animation": "\"Andando_esquerda\"",
-										"from": "beginning"
-									}
 								}
 							],
 							"sid": 965799212356664
@@ -410,7 +416,17 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 144417759180759,
+							"parameters": {
+								"animation": "\"Andando_frente\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 371562351994165,
 					"children": [
 						{
@@ -507,15 +523,6 @@
 									"parameters": {
 										"control": "down"
 									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 415601013910727,
-									"parameters": {
-										"animation": "\"Andando_frente\"",
-										"from": "beginning"
-									}
 								}
 							],
 							"sid": 696907149189461
@@ -609,7 +616,17 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 561088903098840,
+							"parameters": {
+								"animation": "\"Andando_direita\"",
+								"from": "beginning"
+							}
+						}
+					],
 					"sid": 607668277131949,
 					"children": [
 						{
@@ -706,15 +723,6 @@
 									"parameters": {
 										"control": "right"
 									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 605091989743752,
-									"parameters": {
-										"animation": "\"Andando_direita\"",
-										"from": "beginning"
-									}
 								}
 							],
 							"sid": 294176600705946
@@ -802,7 +810,7 @@
 									"objectClass": "Player",
 									"sid": 410721901070871,
 									"parameters": {
-										"object": "Terreno_5",
+										"object": "buraco",
 										"offset-x": "0",
 										"offset-y": "0"
 									}
@@ -813,8 +821,8 @@
 									"callFunction": "Quebrou_Terreno",
 									"sid": 599402290656562,
 									"parameters": [
-										"Terreno_5.X",
-										"Terreno_5.Y"
+										"buraco.X",
+										"buraco.Y"
 									]
 								},
 								{
@@ -840,7 +848,7 @@
 								},
 								{
 									"id": "destroy",
-									"objectClass": "Terreno_5",
+									"objectClass": "buraco",
 									"sid": 368957329263128
 								}
 							],
@@ -876,6 +884,314 @@
 				}
 			],
 			"sid": 235966712556881
+		},
+		{
+			"functionName": "buff_speed",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 656583090856671,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 903774923455197,
+							"parameters": {
+								"variable": "DEBUFF_VELOCIDADE"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 602214360277108,
+							"parameters": {
+								"variable": "BUFF_VELOCIDADE",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "buff_debuff",
+							"sid": 394599303161850,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "buff_debuff",
+							"sid": 563245608197879,
+							"parameters": {
+								"animation": "\"buff_speed\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 587094117162213
+				}
+			]
+		},
+		{
+			"functionName": "debuff_speed",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 989410068836508,
+					"parameters": {
+						"variable": "DEBUFF_VELOCIDADE",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "buff_debuff",
+					"sid": 747938093560874,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "buff_debuff",
+					"sid": 571404153532635,
+					"parameters": {
+						"animation": "\"debuff_speed\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 113029425515705,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 647287234403033,
+							"parameters": {
+								"variable": "BUFF_VELOCIDADE"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 867517190256868,
+							"parameters": {
+								"variable": "DEBUFF_VELOCIDADE",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "buff_debuff",
+							"sid": 350222844437170,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "buff_debuff",
+							"sid": 431643453834845,
+							"parameters": {
+								"animation": "\"debuff_speed\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 573028931635193
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 461957610969325,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 729365719608740,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 722743870136833,
+							"parameters": {
+								"variable": "BUFF_VELOCIDADE"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 461820433925570,
+							"parameters": {
+								"variable": "DEBUFF_VELOCIDADE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 646736300392235,
+							"parameters": {
+								"variable": "TEMPO_BUFF_DEBUFF",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "buff_debuff",
+							"sid": 986226016758424,
+							"parameters": {
+								"instance-variable": "estado_buff_debuff",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "buff_debuff",
+							"sid": 890989652979543,
+							"parameters": {
+								"frame-number": "buff_debuff.estado_buff_debuff"
+							}
+						}
+					],
+					"sid": 951196057641056,
+					"isOrBlock": true
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 889002536683807,
+					"parameters": {
+						"first-value": "TEMPO_BUFF_DEBUFF",
+						"comparison": 3,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 450284752113086,
+					"parameters": {
+						"variable": "TEMPO_BUFF_DEBUFF",
+						"value": "6"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "buff_debuff",
+					"sid": 865635355774482,
+					"parameters": {
+						"instance-variable": "estado_buff_debuff",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "buff_debuff",
+					"sid": 476267423554619,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 155151826536840,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 395754392366014,
+							"parameters": {
+								"variable": "DEBUFF_VELOCIDADE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 384934499547129,
+							"parameters": {
+								"variable": "DEBUFF_VELOCIDADE",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 376259666521267
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 523121645825937,
+							"parameters": {
+								"variable": "BUFF_VELOCIDADE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 585942217595070,
+							"parameters": {
+								"variable": "BUFF_VELOCIDADE",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 612968175727225
+				}
+			]
 		}
 	],
 	"sid": 942069702529560

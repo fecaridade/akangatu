@@ -133,7 +133,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -143,7 +143,8 @@
 					},
 					"uid": 265,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -598,7 +599,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -608,7 +609,8 @@
 					},
 					"uid": 277,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -753,7 +755,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -763,7 +765,8 @@
 					},
 					"uid": 287,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -908,7 +911,7 @@
 					}
 				},
 				{
-					"type": "Terreno_5",
+					"type": "buraco",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -918,7 +921,8 @@
 					},
 					"uid": 294,
 					"instanceVariables": {
-						"Item": 0
+						"Item": 0,
+						"ja_sorteado": false
 					},
 					"behaviors": {},
 					"world": {
@@ -4195,7 +4199,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 800,
 					"instanceVariables": {},
@@ -5558,7 +5563,7 @@
 						"y": 960,
 						"width": 48,
 						"height": 64,
-						"originX": -0.1,
+						"originX": 0,
 						"originY": 0,
 						"color": [
 							1,
@@ -5657,7 +5662,8 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 430,
 					"instanceVariables": {},

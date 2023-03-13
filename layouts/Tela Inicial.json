@@ -55,7 +55,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 427,
 					"instanceVariables": {},
@@ -131,7 +132,8 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 420,
 					"instanceVariables": {},

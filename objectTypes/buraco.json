@@ -1,5 +1,5 @@
 {
-	"name": "Terreno_5",
+	"name": "buraco",
 	"plugin-id": "Sprite",
 	"sid": 508596357090820,
 	"isGlobal": false,
@@ -10,6 +10,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 942539063099352
+		},
+		{
+			"name": "ja_sorteado",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 367078208293752
 		}
 	],
 	"behaviorTypes": [],
@@ -27,26 +34,6 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 7620684,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								0.5,
-								0,
-								0.984375,
-								0,
-								0.984375,
-								0.5,
-								0.984375,
-								0.984375,
-								0.5,
-								0.984375,
-								0,
-								0.984375,
-								0,
-								0.5
-							]
-						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

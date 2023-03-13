@@ -1,35 +1,29 @@
 {
-	"name": "novo_terreno_cima",
+	"name": "background_ui",
 	"plugin-id": "Sprite",
-	"sid": 625593580966412,
+	"sid": 755115135769492,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 130859401666787
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 250,
+						"height": 250,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1148405,
+						"imageSpriteId": 1963609,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 980769307074821,
+				"sid": 207321901498666,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

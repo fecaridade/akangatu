@@ -51,10 +51,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 635700522833674,
+							"sid": 944218906104849,
 							"parameters": {
 								"variable": "Cronometro",
-								"value": "90"
+								"value": "60"
 							}
 						},
 						{
@@ -112,6 +112,14 @@
 							"parameters": {
 								"text": "Cronometro"
 							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "timer_animado",
+							"sid": 555071697183124,
+							"parameters": {
+								"frame-number": "timer_animado.estado_tempo"
+							}
 						}
 					],
 					"sid": 633507120050778
@@ -161,7 +169,7 @@
 					"conditions": [
 						{
 							"id": "on-destroyed",
-							"objectClass": "Terreno_5",
+							"objectClass": "buraco",
 							"sid": 737455014210142
 						}
 					],
@@ -173,7 +181,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "Terreno_5",
+									"objectClass": "buraco",
 									"sid": 250064681797112,
 									"parameters": {
 										"instance-variable": "Item",
@@ -198,11 +206,137 @@
 								}
 							],
 							"sid": 596296621976612
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 568833600292832,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 317490360413653,
+									"parameters": {
+										"type": "log",
+										"message": "\"Buff Sppeed\""
+									}
+								},
+								{
+									"callFunction": "buff_speed",
+									"sid": 173761312132753
+								}
+							],
+							"sid": 603442371706841
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 106264955922201,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 871852453025825,
+									"parameters": {
+										"type": "log",
+										"message": "\"Buff Tempo\""
+									}
+								},
+								{
+									"callFunction": "buff_tempo",
+									"sid": 605572806879939
+								}
+							],
+							"sid": 195379687692111
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "buraco",
+									"sid": 303755167629923,
+									"parameters": {
+										"instance-variable": "Item",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 530452719242387,
+									"parameters": {
+										"type": "log",
+										"message": "\"Buff Tempo\""
+									}
+								},
+								{
+									"callFunction": "debuff_speed",
+									"sid": 949371187479987
+								}
+							],
+							"sid": 677052900572280
 						}
 					]
 				}
 			],
 			"sid": 657311916136122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 642790214418385,
+					"parameters": {
+						"interval-seconds": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "timer_animado",
+					"sid": 623133364497110,
+					"parameters": {
+						"instance-variable": "estado_tempo",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "cronometroFases",
+					"sid": 643753364022432,
+					"parameters": {
+						"text": "Cronometro"
+					}
+				}
+			],
+			"sid": 218028134951157
 		}
 	],
 	"sid": 915948015060443
