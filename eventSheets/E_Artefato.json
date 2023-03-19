@@ -68,7 +68,7 @@
 				},
 				{
 					"id": "set-animation",
-					"objectClass": "ItemAchado",
+					"objectClass": "itemAchado",
 					"sid": 987612547182568,
 					"parameters": {
 						"animation": "Tipo_Tesouro",
@@ -76,37 +76,30 @@
 					}
 				},
 				{
-					"callFunction": "Seta_nome_peça",
-					"sid": 380366550075096
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Nome_artefato",
-					"sid": 226965683748087,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
+					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 268015689282623,
+					"sid": 751371966511464,
 					"parameters": {
-						"seconds": "10"
+						"variable": "TelaAtual",
+						"value": "1"
 					}
 				},
 				{
 					"id": "start-fade",
 					"objectClass": "Fade",
-					"sid": 381232411773360,
+					"sid": 189212452502882,
 					"behaviorType": "Fade_Start"
 				},
 				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 529638641867186,
+					"callFunction": "Seta_nome_peça",
+					"sid": 380366550075096
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "nome_artefato",
+					"sid": 226965683748087,
 					"parameters": {
-						"which": "next"
+						"visibility": "visible"
 					}
 				}
 			],
@@ -124,7 +117,7 @@
 					"conditions": [
 						{
 							"id": "is-animation-playing",
-							"objectClass": "ItemAchado",
+							"objectClass": "itemAchado",
 							"sid": 870770516456632,
 							"parameters": {
 								"animation": "\"Flauta\""
@@ -149,7 +142,7 @@
 					"conditions": [
 						{
 							"id": "is-animation-playing",
-							"objectClass": "ItemAchado",
+							"objectClass": "itemAchado",
 							"sid": 964350858678050,
 							"parameters": {
 								"animation": "\"Mascara\""
@@ -174,7 +167,7 @@
 					"conditions": [
 						{
 							"id": "is-animation-playing",
-							"objectClass": "ItemAchado",
+							"objectClass": "itemAchado",
 							"sid": 623260187902642,
 							"parameters": {
 								"animation": "\"Cocar\""
@@ -199,7 +192,7 @@
 					"conditions": [
 						{
 							"id": "is-animation-playing",
-							"objectClass": "ItemAchado",
+							"objectClass": "itemAchado",
 							"sid": 173050022767204,
 							"parameters": {
 								"animation": "\"Vasos\""
@@ -224,7 +217,7 @@
 					"conditions": [
 						{
 							"id": "is-animation-playing",
-							"objectClass": "ItemAchado",
+							"objectClass": "itemAchado",
 							"sid": 949145271339895,
 							"parameters": {
 								"animation": "\"Colar\""
@@ -260,7 +253,7 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "Nome_artefato",
+					"objectClass": "nome_artefato",
 					"sid": 644588234657084,
 					"parameters": {
 						"text": "Informacoes_artefato.At(index_informação)"
@@ -268,6 +261,140 @@
 				}
 			],
 			"sid": 403946254129567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 897504989530299,
+					"parameters": {
+						"variable": "TelaAtual",
+						"comparison": 3,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 317939129701135,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-index-pressed",
+							"objectClass": "Gamepad",
+							"sid": 563468901560589,
+							"parameters": {
+								"gamepad": "0",
+								"button-index": "8"
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 247770974385601,
+							"parameters": {
+								"key": 13
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 389012897196416,
+							"behaviorType": "Fade_End"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 204097959352634,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 113602172981338,
+							"parameters": {
+								"layout": "\"Mapa\"&TelaAtual"
+							}
+						}
+					],
+					"sid": 868554180865282,
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 375674478604577,
+					"parameters": {
+						"variable": "TelaAtual",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 229988481604503,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-button-index-pressed",
+							"objectClass": "Gamepad",
+							"sid": 909406200078728,
+							"parameters": {
+								"gamepad": "0",
+								"button-index": "8"
+							}
+						},
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 398199540257133,
+							"parameters": {
+								"key": 13
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 993820325767978,
+							"behaviorType": "Fade_End"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 229652436007275,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 909722391727844,
+							"parameters": {
+								"layout": "Tela Vitoria"
+							}
+						}
+					],
+					"sid": 154705607412245,
+					"isOrBlock": true
+				}
+			]
 		}
 	],
 	"sid": 392676886660029

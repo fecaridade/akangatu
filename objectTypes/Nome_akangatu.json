@@ -1,10 +1,16 @@
 {
-	"name": "Nome_akangatu",
+	"name": "nome_akangatu",
 	"plugin-id": "Sprite",
 	"sid": 942507757167468,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 820564202030023
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

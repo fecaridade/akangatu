@@ -215,7 +215,7 @@
 					"objectClass": "System",
 					"sid": 277419838394941,
 					"parameters": {
-						"object-to-create": "ItemAchado",
+						"object-to-create": "itemAchado",
 						"layer": "4",
 						"x": "300",
 						"y": "200",
@@ -225,7 +225,7 @@
 				},
 				{
 					"id": "set-animation",
-					"objectClass": "ItemAchado",
+					"objectClass": "itemAchado",
 					"sid": 550475620732135,
 					"parameters": {
 						"animation": "Tipo_Tesouro",
@@ -278,87 +278,7 @@
 					}
 				}
 			],
-			"sid": 262786037351459,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 588324118055541,
-							"parameters": {
-								"first-value": "LayoutName",
-								"comparison": 0,
-								"second-value": "\"Mapa 1\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 854769458370883,
-							"parameters": {
-								"layout": "Mapa 2"
-							}
-						}
-					],
-					"sid": 964011105804125
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 845279547809111,
-							"parameters": {
-								"first-value": "LayoutName",
-								"comparison": 0,
-								"second-value": "\"Mapa 2\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 152196142239944,
-							"parameters": {
-								"layout": "Mapa 3"
-							}
-						}
-					],
-					"sid": 294471841795481
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 386885638045684,
-							"parameters": {
-								"first-value": "LayoutName",
-								"comparison": 0,
-								"second-value": "\"Mapa 3\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 638677877793770,
-							"parameters": {
-								"layout": "Tela Inicial"
-							}
-						}
-					],
-					"sid": 379045866776278
-				}
-			]
+			"sid": 262786037351459
 		},
 		{
 			"functionName": "Quebrou_Terreno",
@@ -391,7 +311,7 @@
 					"objectClass": "System",
 					"sid": 526248686535327,
 					"parameters": {
-						"object-to-create": "novo_terreno_9",
+						"object-to-create": "terreno_6",
 						"layer": "1",
 						"x": "posX_terreno",
 						"y": "posY_terreno",

@@ -161,7 +161,7 @@
 							"actions": [
 								{
 									"id": "set-gravity",
-									"objectClass": "Particula_terreno",
+									"objectClass": "particula_terreno",
 									"sid": 509600161913794,
 									"parameters": {
 										"gravity": "0"
@@ -169,7 +169,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Particula_terreno",
+									"objectClass": "particula_terreno",
 									"sid": 396578725561084,
 									"parameters": {
 										"speed": "100"
@@ -196,7 +196,7 @@
 											"objectClass": "System",
 											"sid": 651729291933590,
 											"parameters": {
-												"object-to-create": "Particula_terreno",
+												"object-to-create": "particula_terreno",
 												"layer": "1",
 												"x": "player.X+45",
 												"y": "player.Y",
@@ -379,7 +379,7 @@
 											"objectClass": "System",
 											"sid": 721948992845276,
 											"parameters": {
-												"object-to-create": "Particula_terreno",
+												"object-to-create": "particula_terreno",
 												"layer": "1",
 												"x": "player.X+15",
 												"y": "player.Y+40",
@@ -544,7 +544,7 @@
 							"actions": [
 								{
 									"id": "set-gravity",
-									"objectClass": "Particula_terreno",
+									"objectClass": "particula_terreno",
 									"sid": 676875160189715,
 									"parameters": {
 										"gravity": "400"
@@ -552,7 +552,7 @@
 								},
 								{
 									"id": "set-speed",
-									"objectClass": "Particula_terreno",
+									"objectClass": "particula_terreno",
 									"sid": 318014138182521,
 									"parameters": {
 										"speed": "100"
@@ -579,7 +579,7 @@
 											"objectClass": "System",
 											"sid": 928536941110245,
 											"parameters": {
-												"object-to-create": "Particula_terreno",
+												"object-to-create": "particula_terreno",
 												"layer": "1",
 												"x": "player.X+40",
 												"y": "player.Y+90",
@@ -762,7 +762,7 @@
 											"objectClass": "System",
 											"sid": 108006779897129,
 											"parameters": {
-												"object-to-create": "Particula_terreno",
+												"object-to-create": "particula_terreno",
 												"layer": "1",
 												"x": "player.X+80",
 												"y": "player.Y+40",

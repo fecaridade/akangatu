@@ -12,10 +12,12 @@
 	],
 	"effectTypes": [],
 	"members": [
-		"novo_terreno_1",
-		"novo_terreno_3",
-		"novo_terreno_2",
-		"novo_terreno_4",
-		"novo_terreno_10"
+		"terreno_1",
+		"terreno_4",
+		"terreno_3",
+		"terreno_5",
+		"terreno_2",
+		"terreno_7",
+		"terreno_8"
 	]
 }

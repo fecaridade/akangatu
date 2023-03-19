@@ -1,0 +1,40 @@
+{
+	"name": "opcoesMenu",
+	"plugin-id": "Spritefont2",
+	"sid": 686688215868778,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "opcao",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 974763992344600
+		},
+		{
+			"name": "acao",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 852906972857573
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3531133,
+		"useCollisionPoly": true
+	}
+}

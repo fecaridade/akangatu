@@ -36,7 +36,7 @@
 					}
 				},
 				{
-					"type": "ItemAchado",
+					"type": "itemAchado",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Flauta",
@@ -67,7 +67,7 @@
 					}
 				},
 				{
-					"type": "Particula_terreno",
+					"type": "particula_terreno",
 					"properties": {
 						"rate": 4,
 						"spray-cone": 50,

@@ -1,48 +1,46 @@
 {
-	"name": "Terreno_4",
+	"name": "terreno_4",
 	"plugin-id": "Sprite",
-	"sid": 305056561691702,
+	"sid": 349423860195905,
 	"isGlobal": false,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "Tipo",
-			"type": "string",
-			"desc": "",
-			"show": true,
-			"sid": 892186243798450
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 274330263694536
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 32,
+						"height": 32,
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4975764,
+						"imageSpriteId": 3168687,
 						"collisionPoly": {
 							"points": [
 								0,
-								0,
+								0.03125,
 								0.5,
-								0,
-								0.984375,
-								0,
-								0.984375,
+								0.03125,
+								0.96875,
+								0.03125,
+								0.96875,
 								0.5,
-								0.984375,
-								0.984375,
+								0.96875,
+								0.96875,
 								0.5,
-								0.984375,
+								0.96875,
 								0,
-								0.984375,
+								0.96875,
 								0,
 								0.5
 							]
@@ -51,7 +49,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 179070785346692,
+				"sid": 257056400900474,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

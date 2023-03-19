@@ -34,6 +34,49 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "texto_instrucao",
+					"properties": {
+						"text": "Press Enter to start",
+						"enable-bbcode": true,
+						"font": "fantasy",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.3176470588235294,
+							0.30196078431372547,
+							0.30196078431372547,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 434,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 512,
+						"y": 886,
+						"width": 200,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 199429310520739,
@@ -70,7 +113,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "ItemAchado",
+					"type": "itemAchado",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Flauta",
@@ -101,7 +144,7 @@
 					}
 				},
 				{
-					"type": "Nome_artefato",
+					"type": "nome_artefato",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
@@ -120,19 +163,19 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": false,
-						"origin": "top-left",
+						"origin": "center",
 						"read-aloud": false
 					},
 					"uid": 846,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 195,
+						"x": 512,
 						"y": 689,
 						"width": 634,
 						"height": 143,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -85,8 +92,29 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "TileMovement",
 			"name": "Tile movement",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -96,63 +124,61 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "wjc5lq2v77z",
 	"objectTypes": {
 		"items": [
-			"Terreno_1",
 			"Browser",
 			"Debug",
-			"Terreno_2",
-			"Terreno_3",
-			"Terreno_4",
 			"buraco",
 			"Player",
 			"Keyboard",
 			"Touch",
 			"borda_de_mapa",
 			"Fundo_Vitoria",
-			"ItemAchado",
-			"Particula_terreno",
+			"itemAchado",
+			"particula_terreno",
 			"Gamepad",
 			"cronometroFases",
 			"game_over_texto",
-			"Try_again",
 			"game_over_background",
 			"texto_game_over",
-			"texto_try_again",
-			"instrução_enter",
 			"inicial_background",
-			"texto_akangatu",
-			"start",
-			"texto_exit",
-			"instrução_exit",
-			"instrução_start",
+			"texto_instrucao",
 			"TesteInput",
-			"Texto_artefato",
 			"Fade",
 			"Audio",
-			"novo_terreno_1",
-			"novo_terreno_2",
-			"novo_terreno_3",
-			"novo_terreno_4",
-			"novo_terreno_5",
-			"novo_terreno_6",
-			"novo_terreno_7",
-			"novo_terreno_8",
-			"novo_terreno_9",
-			"novo_terreno_10",
+			"terreno_1",
+			"terreno_3",
+			"terreno_4",
+			"terreno_5",
+			"terreno_6",
+			"terreno_2",
 			"Informacoes_artefato",
-			"Nome_artefato",
-			"Nome_akangatu",
-			"novo_terreno_quina_dir",
-			"novo_terreno_quina_esq",
-			"novo_terreno_cima",
-			"novo_terreno_baixo",
+			"nome_artefato",
+			"nome_akangatu",
+			"terreno_dir",
+			"terreno_esq",
+			"terreno_cima",
+			"terreno_baixo",
 			"timer_animado",
 			"buff_debuff",
-			"background_ui"
+			"background_ui",
+			"terreno_quina",
+			"texto_credito",
+			"terreno_7",
+			"terreno_8",
+			"tween_ref",
+			"cursor",
+			"opcoesMenu"
 		],
 		"subfolders": []
 	},
@@ -168,24 +194,24 @@
 	"layouts": {
 		"items": [
 			"Tela Inicial",
-			"Carrega Objetos",
-			"Mapa 1",
+			"Mapa1",
+			"Mapa2",
+			"Mapa3",
 			"Tela Artefato",
-			"Mapa 2",
-			"Mapa 3",
 			"Tela GameOver",
-			"Teste_Jogo"
+			"Carrega Objetos",
+			"Teste_Jogo",
+			"Tela Creditos",
+			"Tela Vitoria"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Player_Controller",
-			"E_Mapa 1",
 			"Mapa_Controller",
-			"E_Mapa 2",
+			"E_Mapas",
 			"Variaveis Globais",
-			"E_Mapa 3",
 			"Game_Manager",
 			"Teste Jogo",
 			"E_Artefato"
@@ -211,6 +237,22 @@
 					"name": "achou_tesouro.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 559637450514092,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "8_Bit_Adventure.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 826498697160678,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "random.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 150184590218875,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -392,7 +434,7 @@
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
-		"fullscreenQuality": "low",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -435,5 +477,5 @@
 	},
 	"viewportWidth": 1024,
 	"viewportHeight": 1088,
-	"firstLayout": "Mapa 1"
+	"firstLayout": "Mapa1"
 }
