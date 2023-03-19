@@ -33,57 +33,368 @@
 							"objectClass": "Fade",
 							"sid": 492254814981260,
 							"behaviorType": "Fade_Start"
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "nome_akangatu",
+							"sid": 283847009849608,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "tween_ref",
+								"x": false,
+								"y": true,
+								"angle": false,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "tween_ref",
+							"sid": 989347641641605,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "260",
+								"time": "1.5",
+								"ease": "easeoutbounce",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 153777356022894,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 227078825415069,
+							"parameters": {
+								"audio-file": "8_Bit_Adventure",
+								"loop": "looping",
+								"volume": "Volume_Musica",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 860376856790435
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Cursor_iniciar",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-button-index-pressed",
-							"objectClass": "Gamepad",
-							"sid": 563926544077757,
-							"parameters": {
-								"gamepad": "0",
-								"button-index": "8"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 296027667715887,
+									"parameters": {
+										"key": 40
+									}
+								}
+							],
+							"actions": [],
+							"sid": 269825098271859,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 889778146839322,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 2,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "cursor",
+											"sid": 873228154176618,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 795860086833926
+								}
+							]
 						},
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 505093255165629,
-							"parameters": {
-								"key": 13
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 625820524395728,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [],
+							"sid": 924453070835799,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 204561381232623,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 4,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "cursor",
+											"sid": 881791089326033,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 463734082006480
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-index-pressed",
+									"objectClass": "Gamepad",
+									"sid": 213349368114899,
+									"parameters": {
+										"gamepad": "0",
+										"button-index": "8"
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 618329167269647,
+									"parameters": {
+										"key": 13
+									}
+								}
+							],
+							"actions": [],
+							"sid": 259623951632225,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 990888426771924,
+											"parameters": {
+												"object": "opcoesMenu",
+												"expression": "opcoesMenu.opcao",
+												"comparison": 0,
+												"value": "cursor.opcao_selecionada"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 144510235191655,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 156310991751357,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"comecar\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 120224194758539,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 798813213102820,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 361157603212977,
+													"parameters": {
+														"layout": "Mapa1"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 891303879070327
+												}
+											],
+											"sid": 148798860909273
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 828287396178651,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"creditos\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 632494624963925,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 149256459259820,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 428093276185120,
+													"parameters": {
+														"layout": "Tela Creditos"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 969861210119895
+												}
+											],
+											"sid": 340515478531828
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 693437746524148,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 0,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "cursor",
+									"sid": 934564985560039,
+									"parameters": {
+										"y": "opcoesMenu.Y"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "cursor",
+									"sid": 719686219612326,
+									"parameters": {
+										"x": "opcoesMenu.X - 10"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 326982622690455,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "200"
+									}
+								}
+							],
+							"sid": 392038244218416
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 415168866634694,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 1,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 252255311631831,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 728496476920193
 						}
 					],
-					"actions": [
-						{
-							"id": "start-fade",
-							"objectClass": "Fade",
-							"sid": 358671764423616,
-							"behaviorType": "Fade_End"
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 673634006606697,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 614030280138440,
-							"parameters": {
-								"layout": "Mapa 1"
-							}
-						}
-					],
-					"sid": 934114130206766,
-					"isOrBlock": true
+					"sid": 316287183008381
 				}
 			]
 		},
@@ -108,102 +419,1055 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-button-index-pressed",
-							"objectClass": "Gamepad",
-							"sid": 245434151643654,
-							"parameters": {
-								"gamepad": "0",
-								"button-index": "8"
-							}
-						},
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 496607432515178,
-							"parameters": {
-								"key": 13
-							}
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 751629951154618
 						}
 					],
 					"actions": [
 						{
 							"id": "start-fade",
 							"objectClass": "Fade",
-							"sid": 960479119096491,
-							"behaviorType": "Fade_End"
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 569071044241577,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 206663115692763,
-							"parameters": {
-								"layout": "Mapa 1"
-							}
-						},
-						{
-							"id": "reset-global-variables",
-							"objectClass": "System",
-							"sid": 669457223761292
+							"sid": 403124730948112,
+							"behaviorType": "Fade_Start"
 						}
 					],
-					"sid": 548834691337969,
-					"isOrBlock": true
+					"sid": 816943060468275
 				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Cursor_game_over",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 298875915909075,
+									"parameters": {
+										"key": 40
+									}
+								}
+							],
+							"actions": [],
+							"sid": 426316489810837,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 190517128222310,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 2,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "cursor",
+											"sid": 894145023636108,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 613434165902742
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 523108310603758,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [],
+							"sid": 376194719109968,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 423054806466802,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 4,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "cursor",
+											"sid": 527247113000515,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 634130588849459
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-index-pressed",
+									"objectClass": "Gamepad",
+									"sid": 530042423522552,
+									"parameters": {
+										"gamepad": "0",
+										"button-index": "8"
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 187247040964223,
+									"parameters": {
+										"key": 13
+									}
+								}
+							],
+							"actions": [],
+							"sid": 402182064651692,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 143160141338968,
+											"parameters": {
+												"object": "opcoesMenu",
+												"expression": "opcoesMenu.opcao",
+												"comparison": 0,
+												"value": "cursor.opcao_selecionada"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 422257031979591,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 379311933562253,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"repetir\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 330430748037350,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 278212392367179,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 759594955324069,
+													"parameters": {
+														"layout": "Mapa1"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 280720430836210
+												}
+											],
+											"sid": 593567329934392
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 579759166931272,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"sair\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 498515873666910,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 758045089323569,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 733385047534600,
+													"parameters": {
+														"layout": "Tela Inicial"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 755841178446733
+												}
+											],
+											"sid": 743929751565299
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 232552303299448,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 0,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "cursor",
+									"sid": 269500699780332,
+									"parameters": {
+										"y": "opcoesMenu.Y"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "cursor",
+									"sid": 139519664768615,
+									"parameters": {
+										"x": "opcoesMenu.X - 10"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 499880400140614,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "200"
+									}
+								}
+							],
+							"sid": 155033191743696
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 824326462982092,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 1,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 820840071074146,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 118762979907194
+						}
+					],
+					"sid": 155003080430985
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 150049891741286,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Tela Creditos\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 770238323346798,
+			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 912624933685944,
-							"parameters": {
-								"key": 32
-							}
-						},
-						{
-							"id": "on-button-index-pressed",
-							"objectClass": "Gamepad",
-							"sid": 225685836146365,
-							"parameters": {
-								"gamepad": "0",
-								"button-index": "9"
-							}
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 604518954040426
 						}
 					],
 					"actions": [
 						{
 							"id": "start-fade",
 							"objectClass": "Fade",
-							"sid": 448244749637620,
-							"behaviorType": "Fade_End"
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 281014022742938,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 331295286198981,
-							"parameters": {
-								"layout": "Tela Inicial"
-							}
+							"sid": 145904479338923,
+							"behaviorType": "Fade_Start"
 						}
 					],
-					"sid": 570383070224923,
-					"isOrBlock": true
+					"sid": 514562662510266
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Cursor_creditos",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 149566800133241,
+									"parameters": {
+										"key": 40
+									}
+								}
+							],
+							"actions": [],
+							"sid": 873785867935263,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 883890801668290,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 2,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "cursor",
+											"sid": 921704645764093,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 156243746143177
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 828931486892861,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [],
+							"sid": 736033946617697,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 913415667430074,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 4,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "cursor",
+											"sid": 263019428019230,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 599118147535515
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-index-pressed",
+									"objectClass": "Gamepad",
+									"sid": 731010954489562,
+									"parameters": {
+										"gamepad": "0",
+										"button-index": "8"
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 531814880536550,
+									"parameters": {
+										"key": 13
+									}
+								}
+							],
+							"actions": [],
+							"sid": 645063205184917,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 312633855828526,
+											"parameters": {
+												"object": "opcoesMenu",
+												"expression": "opcoesMenu.opcao",
+												"comparison": 0,
+												"value": "cursor.opcao_selecionada"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 537388342932597,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 400199679665404,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"jogar\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 616145428528101,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 972558041413693,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 991885612516791,
+													"parameters": {
+														"layout": "Mapa1"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 296656870069147
+												}
+											],
+											"sid": 817307050469538
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 719723184600903,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"voltar\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 715640513773404,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 866807096382331,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 696822212107540,
+													"parameters": {
+														"layout": "Tela Inicial"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 471687048226099
+												}
+											],
+											"sid": 621491437881745
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 720507937123916,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 0,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "cursor",
+									"sid": 439683481408196,
+									"parameters": {
+										"y": "opcoesMenu.Y"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "cursor",
+									"sid": 338743468054432,
+									"parameters": {
+										"x": "opcoesMenu.X - 10"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 931190305733030,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "200"
+									}
+								}
+							],
+							"sid": 576774861984138
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 716723003089762,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 1,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 437466972332138,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 695408088606197
+						}
+					],
+					"sid": 549105825322830
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 724473254775751,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Tela Artefato\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 926347671715034,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 962042725652062
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 495789902776907,
+							"behaviorType": "Fade_Start"
+						}
+					],
+					"sid": 415043048673138
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 834977337537198,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Tela Vitoria\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 147331200371926,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 651455684912710
+						}
+					],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Fade",
+							"sid": 283800269846152,
+							"behaviorType": "Fade_Start"
+						}
+					],
+					"sid": 368188307062960
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Cursor_creditos2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 452501687549526,
+									"parameters": {
+										"key": 40
+									}
+								}
+							],
+							"actions": [],
+							"sid": 182019284471352,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 821720166157198,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 2,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "cursor",
+											"sid": 830303998746401,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 726747019293340
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 383416641172232,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [],
+							"sid": 994698402500597,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "cursor",
+											"sid": 405206548190047,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"comparison": 4,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "cursor",
+											"sid": 657868674799182,
+											"parameters": {
+												"instance-variable": "opcao_selecionada",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 403852981747443
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-index-pressed",
+									"objectClass": "Gamepad",
+									"sid": 406437925484735,
+									"parameters": {
+										"gamepad": "0",
+										"button-index": "8"
+									}
+								},
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 327138736392029,
+									"parameters": {
+										"key": 13
+									}
+								}
+							],
+							"actions": [],
+							"sid": 260897027400842,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-by-comparison",
+											"objectClass": "System",
+											"sid": 283514368308403,
+											"parameters": {
+												"object": "opcoesMenu",
+												"expression": "opcoesMenu.opcao",
+												"comparison": 0,
+												"value": "cursor.opcao_selecionada"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 184744248832235,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 141443669019655,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"inicio\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 747651985544597,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 158309254551262,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 404538662498001,
+													"parameters": {
+														"layout": "Tela Inicial"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 211245876388625
+												}
+											],
+											"sid": 940565873747703
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "opcoesMenu",
+													"sid": 854369863780934,
+													"parameters": {
+														"instance-variable": "acao",
+														"comparison": 0,
+														"value": "\"creditos\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "start-fade",
+													"objectClass": "Fade",
+													"sid": 537592033685162,
+													"behaviorType": "Fade_End"
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 827960060245432,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 914262926744898,
+													"parameters": {
+														"layout": "Tela Creditos"
+													}
+												},
+												{
+													"id": "reset-global-variables",
+													"objectClass": "System",
+													"sid": 583999560118050
+												}
+											],
+											"sid": 224885673731421
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 468469380139466,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 0,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-y",
+									"objectClass": "cursor",
+									"sid": 523898312968424,
+									"parameters": {
+										"y": "opcoesMenu.Y"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "cursor",
+									"sid": 117038444825876,
+									"parameters": {
+										"x": "opcoesMenu.X - 10"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 410728183348062,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "200"
+									}
+								}
+							],
+							"sid": 460814939908552
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "opcoesMenu",
+									"sid": 783407513186621,
+									"parameters": {
+										"instance-variable": "opcao",
+										"comparison": 1,
+										"value": "cursor.opcao_selecionada"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "opcoesMenu",
+									"sid": 765975396157953,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 474392817439993
+						}
+					],
+					"sid": 951573754694805
 				}
 			]
 		}

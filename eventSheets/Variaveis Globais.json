@@ -19,7 +19,7 @@
 			"eventType": "variable",
 			"name": "Volume_Musica",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "-20",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -34,6 +34,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 895672063096218
+		},
+		{
+			"eventType": "variable",
+			"name": "TelaAtual",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 614513298302068
 		},
 		{
 			"eventType": "comment",

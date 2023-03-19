@@ -1,0 +1,363 @@
+{
+	"name": "Tela Vitoria",
+	"layers": [
+		{
+			"name": "Background",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "inicial_background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 973,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 512,
+						"y": 544,
+						"width": 1024,
+						"height": 1088,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "texto_instrucao",
+					"properties": {
+						"text": "GANHOU O JOGO E BLABLABLA",
+						"enable-bbcode": true,
+						"font": "fantasy",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.7725490196078432,
+							0.7294117647058823,
+							0.7294117647058823,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 972,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 510,
+						"y": 620,
+						"width": 363,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "texto_instrucao",
+					"properties": {
+						"text": "QUEM VAI FAZER ISSO AQUI SÃO AS ARTISTAS EU NAO SEEI",
+						"enable-bbcode": true,
+						"font": "fantasy",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.7725490196078432,
+							0.7294117647058823,
+							0.7294117647058823,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 974,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 508,
+						"y": 249.5,
+						"width": 363,
+						"height": 83,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 626364218564788,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "opcoesMenu",
+					"properties": {
+						"text": "INICIO",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>Ç",
+						"spacing-data": "",
+						"scale": 1.6,
+						"character-spacing": -2,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 979,
+					"instanceVariables": {
+						"opcao": 1,
+						"acao": "inicio"
+					},
+					"behaviors": {},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"world": {
+						"x": 435,
+						"y": 780,
+						"width": 154,
+						"height": 30,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "opcoesMenu",
+					"properties": {
+						"text": "CREDITOS",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>Ç",
+						"spacing-data": "",
+						"scale": 1.6,
+						"character-spacing": -2,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "left",
+						"read-aloud": false
+					},
+					"uid": 980,
+					"instanceVariables": {
+						"opcao": 2,
+						"acao": "creditos"
+					},
+					"behaviors": {},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"world": {
+						"x": 413.5,
+						"y": 880,
+						"width": 197,
+						"height": 30,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cursor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 981,
+					"instanceVariables": {
+						"opcao_selecionada": 1,
+						"acao": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 425,
+						"y": 780,
+						"width": 14,
+						"height": 25,
+						"originX": 1,
+						"originY": 0.6000000000000001,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 603949482056511,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Fade",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 829082736706304,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 103007701614873,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 1024,
+	"height": 1088,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Mapa_Controller"
+}

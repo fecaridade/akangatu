@@ -1,17 +1,9 @@
 {
-	"name": "Terreno_1",
+	"name": "terreno_1",
 	"plugin-id": "Sprite",
-	"sid": 295788505401185,
+	"sid": 650735922061100,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Tipo",
-			"type": "string",
-			"desc": "",
-			"show": true,
-			"sid": 820469257103075
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -19,19 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 32,
+						"height": 32,
 						"originX": 0,
-						"originY": 0,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6683043,
+						"imageSpriteId": 7202048,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0.5,
+								0,
+								0.03125,
+								0.5,
+								0.03125,
+								0.96875,
+								0.03125,
+								0.96875,
+								0.5,
+								0.96875,
+								1,
+								0.5,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 801407196129702,
+				"sid": 722418941222130,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
