@@ -10814,7 +10814,7 @@
 								"movement": "vertical",
 								"wave": "sine",
 								"period": 2,
-								"period-random": 0,
+								"period-random": 2,
 								"period-offset": 0,
 								"period-offset-random": 0,
 								"magnitude": 1,

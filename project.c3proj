@@ -178,7 +178,9 @@
 			"terreno_8",
 			"tween_ref",
 			"cursor",
-			"opcoesMenu"
+			"opcoesMenu",
+			"Fundo_Background",
+			"Fundo_Background2"
 		],
 		"subfolders": []
 	},

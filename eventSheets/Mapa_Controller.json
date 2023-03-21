@@ -22,6 +22,66 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 435839628998334
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Fundo_Background",
+							"sid": 257637531303320,
+							"parameters": {
+								"x": "Self.X + 1",
+								"y": "Self.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Fundo_Background2",
+							"sid": 333543228692836,
+							"parameters": {
+								"x": "Self.X +1",
+								"y": "Self.Y"
+							}
+						}
+					],
+					"sid": 319825361380519,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 691392901750720,
+									"parameters": {
+										"first-value": "Fundo_Background.X",
+										"comparison": 5,
+										"second-value": "1060"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Fundo_Background",
+									"sid": 923313275527509,
+									"parameters": {
+										"x": "-632.169865",
+										"y": "543.516315"
+									}
+								}
+							],
+							"sid": 704814638339909
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 956195844261077
@@ -73,21 +133,40 @@
 							"parameters": {
 								"seconds": "1.0"
 							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 227078825415069,
-							"parameters": {
-								"audio-file": "8_Bit_Adventure",
-								"loop": "looping",
-								"volume": "Volume_Musica",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
 						}
 					],
-					"sid": 860376856790435
+					"sid": 860376856790435,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 433795484256699,
+									"parameters": {
+										"tag": "\"background_music\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 468889794295864,
+									"parameters": {
+										"audio-file": "8_Bit_Adventure",
+										"loop": "looping",
+										"volume": "Volume_Musica",
+										"stereo-pan": "0",
+										"tag-optional": "\"background_music\""
+									}
+								}
+							],
+							"sid": 591870042870904
+						}
+					]
 				},
 				{
 					"eventType": "group",
