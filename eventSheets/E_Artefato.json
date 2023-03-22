@@ -395,6 +395,27 @@
 					"isOrBlock": true
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "laterais_background",
+					"sid": 632662333999452
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-x",
+					"objectClass": "laterais_background",
+					"sid": 136774054172105,
+					"parameters": {
+						"offset-x": "-100*time"
+					}
+				}
+			],
+			"sid": 501531393461287
 		}
 	],
 	"sid": 392676886660029
