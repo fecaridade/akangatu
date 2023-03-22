@@ -1,24 +1,9 @@
 {
 	"name": "buraco",
 	"plugin-id": "Sprite",
-	"sid": 508596357090820,
+	"sid": 678764953892847,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Item",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 942539063099352
-		},
-		{
-			"name": "ja_sorteado",
-			"type": "boolean",
-			"desc": "",
-			"show": true,
-			"sid": 367078208293752
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -33,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7620684,
+						"imageSpriteId": 229772,
 						"collisionPoly": {
 							"points": [
 								0.009375000000000001,
@@ -58,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 984692524184537,
+				"sid": 556281648788852,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

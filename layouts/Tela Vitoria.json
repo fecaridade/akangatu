@@ -4,7 +4,41 @@
 		{
 			"name": "Background",
 			"overriden": 0,
-			"subLayers": [],
+			"subLayers": [
+				{
+					"name": "side",
+					"overriden": 1,
+					"subLayers": [],
+					"instances": [],
+					"sid": 444213332367048,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				}
+			],
 			"instances": [
 				{
 					"type": "inicial_background",
@@ -26,9 +60,9 @@
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
-							1,
-							1,
-							1,
+							0.9333333333333333,
+							0.6274509803921569,
+							0.6274509803921569,
 							1
 						],
 						"angle": 0,
@@ -355,7 +389,7 @@
 	"effectTypes": [],
 	"width": 1024,
 	"height": 1088,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

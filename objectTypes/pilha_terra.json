@@ -1,9 +1,24 @@
 {
-	"name": "Fundo_Background",
+	"name": "pilha_terra",
 	"plugin-id": "Sprite",
-	"sid": 693408741004182,
+	"sid": 508596357090820,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Item",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 942539063099352
+		},
+		{
+			"name": "ja_sorteado",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 367078208293752
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -11,14 +26,14 @@
 			{
 				"frames": [
 					{
-						"width": 1378,
-						"height": 1378,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7810465,
+						"imageSpriteId": 1522321,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -43,7 +58,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 491847116888208,
+				"sid": 984692524184537,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -169,7 +169,7 @@
 					"conditions": [
 						{
 							"id": "on-destroyed",
-							"objectClass": "buraco",
+							"objectClass": "pilha_terra",
 							"sid": 737455014210142
 						}
 					],
@@ -181,7 +181,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "buraco",
+									"objectClass": "pilha_terra",
 									"sid": 250064681797112,
 									"parameters": {
 										"instance-variable": "Item",
@@ -212,7 +212,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "buraco",
+									"objectClass": "pilha_terra",
 									"sid": 568833600292832,
 									"parameters": {
 										"instance-variable": "Item",
@@ -243,7 +243,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "buraco",
+									"objectClass": "pilha_terra",
 									"sid": 106264955922201,
 									"parameters": {
 										"instance-variable": "Item",
@@ -274,7 +274,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "buraco",
+									"objectClass": "pilha_terra",
 									"sid": 303755167629923,
 									"parameters": {
 										"instance-variable": "Item",
@@ -337,6 +337,27 @@
 				}
 			],
 			"sid": 218028134951157
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "laterais_background",
+					"sid": 663957643504093
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-x",
+					"objectClass": "laterais_background",
+					"sid": 519804651325422,
+					"parameters": {
+						"offset-x": "-100*time"
+					}
+				}
+			],
+			"sid": 246565278145485
 		}
 	],
 	"sid": 915948015060443

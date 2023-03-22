@@ -22,7 +22,7 @@
 							"objectClass": "System",
 							"sid": 224650099989674,
 							"parameters": {
-								"object": "buraco"
+								"object": "pilha_terra"
 							}
 						}
 					],
@@ -37,7 +37,7 @@
 									"objectClass": "System",
 									"sid": 811568079453764,
 									"parameters": {
-										"first-value": "buraco.ja_sorteado",
+										"first-value": "pilha_terra.ja_sorteado",
 										"comparison": 0,
 										"second-value": "0"
 									}
@@ -72,7 +72,7 @@
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "buraco",
+											"objectClass": "pilha_terra",
 											"sid": 897553776491263,
 											"parameters": {
 												"instance-variable": "ja_sorteado",
@@ -107,7 +107,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "buraco",
+											"objectClass": "pilha_terra",
 											"sid": 762086005231976,
 											"parameters": {
 												"instance-variable": "Item",
@@ -116,7 +116,7 @@
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "buraco",
+											"objectClass": "pilha_terra",
 											"sid": 863143772643059,
 											"parameters": {
 												"instance-variable": "ja_sorteado",
@@ -151,7 +151,7 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "buraco",
+											"objectClass": "pilha_terra",
 											"sid": 694637883138679,
 											"parameters": {
 												"instance-variable": "Item",
@@ -160,7 +160,7 @@
 										},
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "buraco",
+											"objectClass": "pilha_terra",
 											"sid": 170234937634156,
 											"parameters": {
 												"instance-variable": "ja_sorteado",
@@ -309,10 +309,10 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 526248686535327,
+					"sid": 708700992851931,
 					"parameters": {
-						"object-to-create": "terreno_6",
-						"layer": "1",
+						"object-to-create": "buraco",
+						"layer": "\"Game Events\"",
 						"x": "posX_terreno",
 						"y": "posY_terreno",
 						"create-hierarchy": false,
@@ -353,10 +353,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "Terreno",
-							"sid": 455978399546303,
+							"sid": 161554679833494,
 							"parameters": {
-								"object": "buraco",
-								"layer": "1",
+								"object": "pilha_terra",
+								"layer": "\"Chão\"",
 								"image-point": "0",
 								"create-hierarchy": false
 							}

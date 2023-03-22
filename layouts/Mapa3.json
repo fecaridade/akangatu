@@ -4,7 +4,41 @@
 		{
 			"name": "Background",
 			"overriden": 0,
-			"subLayers": [],
+			"subLayers": [
+				{
+					"name": "side",
+					"overriden": 1,
+					"subLayers": [],
+					"instances": [],
+					"sid": 195775949924658,
+					"effectTypes": [],
+					"isInitiallyVisible": true,
+					"isInitiallyInteractive": true,
+					"color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"backgroundColor": [
+						0.3686274509803922,
+						0.3686274509803922,
+						0.3686274509803922,
+						1
+					],
+					"isTransparent": true,
+					"parallaxX": 1,
+					"parallaxY": 1,
+					"scaleRate": 1,
+					"forceOwnTexture": false,
+					"renderingMode": "3d",
+					"drawOrder": "z-order",
+					"useRenderCells": false,
+					"blendMode": "normal",
+					"zElevation": 0,
+					"global": false
+				}
+			],
 			"instances": [],
 			"sid": 709502311662696,
 			"effectTypes": [],
@@ -1788,7 +1822,7 @@
 					}
 				},
 				{
-					"type": "buraco",
+					"type": "pilha_terra",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1820,7 +1854,7 @@
 					}
 				},
 				{
-					"type": "buraco",
+					"type": "pilha_terra",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1852,7 +1886,7 @@
 					}
 				},
 				{
-					"type": "buraco",
+					"type": "pilha_terra",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1884,7 +1918,7 @@
 					}
 				},
 				{
-					"type": "buraco",
+					"type": "pilha_terra",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -4910,7 +4944,7 @@
 					}
 				},
 				{
-					"type": "buraco",
+					"type": "pilha_terra",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -10599,83 +10633,6 @@
 			"global": false
 		},
 		{
-			"name": "Player",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Parado",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 953,
-					"instanceVariables": {},
-					"behaviors": {
-						"TileMovement": {
-							"properties": {
-								"grid-width": 64,
-								"grid-height": 64,
-								"grid-offset-x": 0,
-								"grid-offset-y": 0,
-								"speed-x": 256,
-								"speed-y": 256,
-								"enabled": true,
-								"default-controls": false,
-								"isometric": false
-							}
-						}
-					},
-					"world": {
-						"x": 576,
-						"y": 960,
-						"width": 48,
-						"height": 64,
-						"originX": -0.16666666666666666,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 208078781185417,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "UI",
 			"overriden": 0,
 			"subLayers": [],
@@ -10834,6 +10791,83 @@
 			"global": false
 		},
 		{
+			"name": "Player",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Parado",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 953,
+					"instanceVariables": {},
+					"behaviors": {
+						"TileMovement": {
+							"properties": {
+								"grid-width": 64,
+								"grid-height": 64,
+								"grid-offset-x": 0,
+								"grid-offset-y": 0,
+								"speed-x": 256,
+								"speed-y": 256,
+								"enabled": true,
+								"default-controls": false,
+								"isometric": false
+							}
+						}
+					},
+					"world": {
+						"x": 576,
+						"y": 960,
+						"width": 48,
+						"height": 64,
+						"originX": -0.16666666666666666,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 208078781185417,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Fade",
 			"overriden": 1,
 			"subLayers": [],
@@ -10872,7 +10906,7 @@
 	"effectTypes": [],
 	"width": 1024,
 	"height": 1024,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

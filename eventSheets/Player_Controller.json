@@ -653,7 +653,35 @@
 									}
 								}
 							],
-							"sid": 718935411844866
+							"sid": 718935411844866,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "Player",
+											"sid": 938755696475844,
+											"parameters": {
+												"animation": "\"Cavando\""
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-speed",
+											"objectClass": "Player",
+											"sid": 241850281862982,
+											"parameters": {
+												"speed": "5"
+											}
+										}
+									],
+									"sid": 537738095012398,
+									"isOrBlock": true
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -673,6 +701,14 @@
 									"parameters": {
 										"x": "256",
 										"y": "256"
+									}
+								},
+								{
+									"id": "set-animation-speed",
+									"objectClass": "Player",
+									"sid": 971672967446377,
+									"parameters": {
+										"speed": "10"
 									}
 								}
 							],
@@ -701,9 +737,47 @@
 										"y": "player.TileMovement.GridY",
 										"instant": "instant"
 									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "Player",
+									"sid": 586636133687011,
+									"disabled": true,
+									"behaviorType": "TileMovement",
+									"parameters": {
+										"x": "384",
+										"y": "384"
+									}
 								}
 							],
-							"sid": 469109792389014
+							"sid": 469109792389014,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "Player",
+											"sid": 527022992001621,
+											"parameters": {
+												"animation": "\"Cavando\""
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-speed",
+											"objectClass": "Player",
+											"sid": 168686736482945,
+											"parameters": {
+												"speed": "20"
+											}
+										}
+									],
+									"sid": 302851011127610
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -722,6 +796,14 @@
 									"behaviorType": "TileMovement",
 									"parameters": {
 										"control": "right"
+									}
+								},
+								{
+									"id": "set-animation-speed",
+									"objectClass": "Player",
+									"sid": 360197264659527,
+									"parameters": {
+										"speed": "10"
 									}
 								}
 							],
@@ -810,7 +892,7 @@
 									"objectClass": "Player",
 									"sid": 410721901070871,
 									"parameters": {
-										"object": "buraco",
+										"object": "pilha_terra",
 										"offset-x": "0",
 										"offset-y": "0"
 									}
@@ -821,8 +903,8 @@
 									"callFunction": "Quebrou_Terreno",
 									"sid": 599402290656562,
 									"parameters": [
-										"buraco.X",
-										"buraco.Y"
+										"pilha_terra.X",
+										"pilha_terra.Y"
 									]
 								},
 								{
@@ -848,7 +930,7 @@
 								},
 								{
 									"id": "destroy",
-									"objectClass": "buraco",
+									"objectClass": "pilha_terra",
 									"sid": 368957329263128
 								}
 							],

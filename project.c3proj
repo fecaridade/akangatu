@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -138,7 +145,7 @@
 		"items": [
 			"Browser",
 			"Debug",
-			"buraco",
+			"pilha_terra",
 			"Player",
 			"Keyboard",
 			"Touch",
@@ -179,8 +186,8 @@
 			"tween_ref",
 			"cursor",
 			"opcoesMenu",
-			"Fundo_Background",
-			"Fundo_Background2"
+			"laterais_background",
+			"buraco"
 		],
 		"subfolders": []
 	},
@@ -201,10 +208,10 @@
 			"Mapa3",
 			"Tela Artefato",
 			"Tela GameOver",
-			"Carrega Objetos",
-			"Teste_Jogo",
 			"Tela Creditos",
-			"Tela Vitoria"
+			"Tela Vitoria",
+			"Teste_Jogo",
+			"Carrega Objetos"
 		],
 		"subfolders": []
 	},
@@ -435,7 +442,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-scale",
+		"fullscreenMode": "scale-outer",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -479,5 +486,5 @@
 	},
 	"viewportWidth": 1024,
 	"viewportHeight": 1088,
-	"firstLayout": "Mapa1"
+	"firstLayout": "Tela Inicial"
 }
