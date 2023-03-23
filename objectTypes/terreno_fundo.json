@@ -1,0 +1,49 @@
+{
+	"name": "terreno_fundo",
+	"plugin-id": "Sprite",
+	"sid": 606617637464387,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 486375,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.0016685271076396788,
+								0.9937383530432844,
+								0,
+								0.996034696413374,
+								0.9983313285227279,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 206631277736437,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
