@@ -74,6 +74,296 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 178,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 896,
+						"y": 896,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 421,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 768,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 427,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 768,
+						"y": 704,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 483,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 512,
+						"y": 512,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 585,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 576,
+						"y": 512,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 639,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 576,
+						"y": 448,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 641,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 384,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 694,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 576,
+						"y": 384,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 703,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 64,
+						"y": 320,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "terreno_fundo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 733,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 192,
+						"y": 640,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "borda_de_mapa",
 					"properties": {
 						"initially-visible": true,
@@ -1818,134 +2108,6 @@
 							1
 						],
 						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pilha_terra",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 125,
-					"instanceVariables": {
-						"Item": 0,
-						"ja_sorteado": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 128,
-						"y": 128,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pilha_terra",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 126,
-					"instanceVariables": {
-						"Item": 0,
-						"ja_sorteado": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 192,
-						"y": 960,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pilha_terra",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 127,
-					"instanceVariables": {
-						"Item": 0,
-						"ja_sorteado": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 704,
-						"y": 128,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pilha_terra",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 128,
-					"instanceVariables": {
-						"Item": 0,
-						"ja_sorteado": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 896,
-						"y": 960,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -4933,38 +5095,6 @@
 						"height": 64,
 						"originX": 0,
 						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "pilha_terra",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 387,
-					"instanceVariables": {
-						"Item": 0,
-						"ja_sorteado": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 128,
-						"y": 640,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -9814,296 +9944,6 @@
 					}
 				},
 				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 178,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 192,
-						"y": 640,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 421,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 64,
-						"y": 320,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 427,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 896,
-						"y": 896,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 639,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 768,
-						"y": 768,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 641,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 576,
-						"y": 512,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 801,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 576,
-						"y": 448,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 954,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 576,
-						"y": 384,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 955,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 640,
-						"y": 384,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 956,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 768,
-						"y": 704,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "terreno_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 957,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 512,
-						"y": 512,
-						"width": 64,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "terreno_4",
 					"properties": {
 						"initially-visible": true,
@@ -10682,11 +10522,11 @@
 					"behaviors": {},
 					"world": {
 						"x": 640,
-						"y": 0,
-						"width": 204,
-						"height": 26,
+						"y": -64,
+						"width": 192,
+						"height": 62,
 						"originX": 0,
-						"originY": -0.6153846153846154,
+						"originY": -1.064516129032258,
 						"color": [
 							1,
 							1,
@@ -10714,8 +10554,8 @@
 					"world": {
 						"x": 128,
 						"y": -64,
-						"width": 181.747572815534,
-						"height": 64,
+						"width": 192,
+						"height": 60.0625,
 						"originX": 0,
 						"originY": -1,
 						"color": [
@@ -10761,7 +10601,168 @@
 			"name": "Game Events",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "pilha_terra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 125,
+					"instanceVariables": {
+						"Item": 0,
+						"ja_sorteado": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 128,
+						"y": 128,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pilha_terra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 126,
+					"instanceVariables": {
+						"Item": 0,
+						"ja_sorteado": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 192,
+						"y": 960,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pilha_terra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 127,
+					"instanceVariables": {
+						"Item": 0,
+						"ja_sorteado": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 704,
+						"y": 128,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pilha_terra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 128,
+					"instanceVariables": {
+						"Item": 0,
+						"ja_sorteado": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 896,
+						"y": 960,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pilha_terra",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 387,
+					"instanceVariables": {
+						"Item": 0,
+						"ja_sorteado": false
+					},
+					"behaviors": {},
+					"world": {
+						"x": 128,
+						"y": 640,
+						"width": 64,
+						"height": 64,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 657469431288325,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

@@ -353,10 +353,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "Terreno",
-							"sid": 161554679833494,
+							"sid": 230816115473440,
 							"parameters": {
 								"object": "pilha_terra",
-								"layer": "\"Chão\"",
+								"layer": "\"Game Events\"",
 								"image-point": "0",
 								"create-hierarchy": false
 							}

@@ -187,7 +187,10 @@
 			"cursor",
 			"opcoesMenu",
 			"laterais_background",
-			"buraco"
+			"buraco",
+			"buff_debuff_old",
+			"op",
+			"terreno_fundo"
 		],
 		"subfolders": []
 	},
@@ -343,80 +346,7 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [
-				{
-					"name": "chão0.png",
-					"type": "image/png",
-					"sid": 114308693970500,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "chão1.png",
-					"type": "image/png",
-					"sid": 883774928583412,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "chão2.png",
-					"type": "image/png",
-					"sid": 406229129054218,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "chão3.png",
-					"type": "image/png",
-					"sid": 570958050126554,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "chão4.png",
-					"type": "image/png",
-					"sid": 490575538640855,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "sprite_0.png",
-					"type": "image/png",
-					"sid": 616408446649116,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "sprite_1.png",
-					"type": "image/png",
-					"sid": 930264498298250,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "sprite_2.png",
-					"type": "image/png",
-					"sid": 724715829813055,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "sprite_3.png",
-					"type": "image/png",
-					"sid": 884181428982477,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": []
 		}
 	},
