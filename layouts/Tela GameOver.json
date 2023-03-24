@@ -151,11 +151,11 @@
 					"properties": {
 						"text": "REPETIR",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>Ç",
+						"character-width": 10,
+						"character-height": 13,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						"spacing-data": "",
-						"scale": 1.6,
+						"scale": 2,
 						"character-spacing": -2,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -171,25 +171,17 @@
 						"acao": "repetir"
 					},
 					"behaviors": {},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
 					"world": {
-						"x": 424.58242633943735,
+						"x": 424.08242633943735,
 						"y": 580,
 						"width": 175,
 						"height": 30,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"angle": 0,
@@ -201,11 +193,11 @@
 					"properties": {
 						"text": "SAIR",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>Ç",
+						"character-width": 10,
+						"character-height": 13,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						"spacing-data": "",
-						"scale": 1.6,
+						"scale": 2,
 						"character-spacing": -2,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -221,25 +213,17 @@
 						"acao": "sair"
 					},
 					"behaviors": {},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
 					"world": {
-						"x": 456.22261385631487,
+						"x": 455.72261385631487,
 						"y": 680,
 						"width": 111.55478508407077,
 						"height": 30,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"angle": 0,
@@ -250,7 +234,7 @@
 					"type": "cursor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "parado",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -264,10 +248,10 @@
 					"world": {
 						"x": 410,
 						"y": 580,
-						"width": 14,
-						"height": 25,
+						"width": 50,
+						"height": 38,
 						"originX": 1,
-						"originY": 0.6000000000000001,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

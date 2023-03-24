@@ -46,6 +46,16 @@
 			"sid": 614513298302068
 		},
 		{
+			"eventType": "variable",
+			"name": "DelayBotao",
+			"type": "number",
+			"initialValue": "0.6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 554652711591499
+		},
+		{
 			"eventType": "comment",
 			"text": "Váriaveis de Jogo"
 		},

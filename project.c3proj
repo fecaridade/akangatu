@@ -190,7 +190,8 @@
 			"buraco",
 			"buff_debuff_old",
 			"op",
-			"terreno_fundo"
+			"terreno_fundo",
+			"opcoesMenu2"
 		],
 		"subfolders": []
 	},

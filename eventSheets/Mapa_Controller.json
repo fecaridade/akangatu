@@ -242,7 +242,37 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "cursor",
+											"sid": 358089117234644,
+											"parameters": {
+												"animation": "\"selecionado\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 796139679981498,
+											"parameters": {
+												"audio-file": "random",
+												"loop": "not-looping",
+												"volume": "Volume_Efeitos",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 514764300400136,
+											"parameters": {
+												"seconds": "DelayBotao"
+											}
+										}
+									],
 									"sid": 144510235191655,
 									"children": [
 										{
@@ -370,47 +400,9 @@
 									"parameters": {
 										"x": "opcoesMenu.X - 10"
 									}
-								},
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "opcoesMenu",
-									"sid": 326982622690455,
-									"parameters": {
-										"effect": "\"Brightness\"",
-										"parameter-index": "0",
-										"value": "200"
-									}
 								}
 							],
 							"sid": 392038244218416
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "opcoesMenu",
-									"sid": 415168866634694,
-									"parameters": {
-										"instance-variable": "opcao",
-										"comparison": 1,
-										"value": "cursor.opcao_selecionada"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "opcoesMenu",
-									"sid": 252255311631831,
-									"parameters": {
-										"effect": "\"Brightness\"",
-										"parameter-index": "0",
-										"value": "0"
-									}
-								}
-							],
-							"sid": 728496476920193
 						}
 					],
 					"sid": 316287183008381
@@ -587,7 +579,37 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "cursor",
+											"sid": 117321603608457,
+											"parameters": {
+												"animation": "\"selecionado\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 560133802710777,
+											"parameters": {
+												"audio-file": "random",
+												"loop": "not-looping",
+												"volume": "Volume_Efeitos",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 934785128968745,
+											"parameters": {
+												"seconds": "DelayBotao"
+											}
+										}
+									],
 									"sid": 422257031979591,
 									"children": [
 										{
@@ -715,47 +737,9 @@
 									"parameters": {
 										"x": "opcoesMenu.X - 10"
 									}
-								},
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "opcoesMenu",
-									"sid": 499880400140614,
-									"parameters": {
-										"effect": "\"Brightness\"",
-										"parameter-index": "0",
-										"value": "200"
-									}
 								}
 							],
 							"sid": 155033191743696
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "opcoesMenu",
-									"sid": 824326462982092,
-									"parameters": {
-										"instance-variable": "opcao",
-										"comparison": 1,
-										"value": "cursor.opcao_selecionada"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "opcoesMenu",
-									"sid": 820840071074146,
-									"parameters": {
-										"effect": "\"Brightness\"",
-										"parameter-index": "0",
-										"value": "0"
-									}
-								}
-							],
-							"sid": 118762979907194
 						}
 					],
 					"sid": 155003080430985
@@ -932,7 +916,37 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "cursor",
+											"sid": 333978489865025,
+											"parameters": {
+												"animation": "\"selecionado\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 887651442561038,
+											"parameters": {
+												"audio-file": "random",
+												"loop": "not-looping",
+												"volume": "Volume_Efeitos",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 322023298045475,
+											"parameters": {
+												"seconds": "DelayBotao"
+											}
+										}
+									],
 									"sid": 537388342932597,
 									"children": [
 										{
@@ -1060,47 +1074,9 @@
 									"parameters": {
 										"x": "opcoesMenu.X - 10"
 									}
-								},
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "opcoesMenu",
-									"sid": 931190305733030,
-									"parameters": {
-										"effect": "\"Brightness\"",
-										"parameter-index": "0",
-										"value": "200"
-									}
 								}
 							],
 							"sid": 576774861984138
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "opcoesMenu",
-									"sid": 716723003089762,
-									"parameters": {
-										"instance-variable": "opcao",
-										"comparison": 1,
-										"value": "cursor.opcao_selecionada"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-effect-parameter",
-									"objectClass": "opcoesMenu",
-									"sid": 437466972332138,
-									"parameters": {
-										"effect": "\"Brightness\"",
-										"parameter-index": "0",
-										"value": "0"
-									}
-								}
-							],
-							"sid": 695408088606197
 						}
 					],
 					"sid": 549105825322830
@@ -1184,7 +1160,7 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Cursor_creditos2",
+					"title": "Cursor_vitoria",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -1315,7 +1291,37 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "cursor",
+											"sid": 508192562922014,
+											"parameters": {
+												"animation": "\"selecionado\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 121482456131395,
+											"parameters": {
+												"audio-file": "random",
+												"loop": "not-looping",
+												"volume": "Volume_Efeitos",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 227584375897908,
+											"parameters": {
+												"seconds": "DelayBotao"
+											}
+										}
+									],
 									"sid": 184744248832235,
 									"children": [
 										{
