@@ -108,7 +108,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Textos artefato",
+			"title": "Artefatos",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -228,39 +228,61 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 321611282541753,
+							"sid": 967696654766541,
 							"parameters": {
-								"variable": "auxiliar_escolhido",
+								"variable": "index_informação",
 								"value": "4"
 							}
 						}
 					],
 					"sid": 612008041892778
+				},
+				{
+					"functionName": "Seta_nome_peça",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 895199123993249,
+							"parameters": {
+								"text": "Informacoes_artefato.At(index_informação)"
+							}
+						}
+					],
+					"sid": 781185151825811
+				},
+				{
+					"functionName": "remove_artefato",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 248158640092731,
+							"parameters": {
+								"text": "Informacoes_artefato.At(index_informação)"
+							}
+						}
+					],
+					"sid": 886804968447411
 				}
 			],
 			"sid": 210628782624315
-		},
-		{
-			"functionName": "Seta_nome_peça",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "nome_artefato",
-					"sid": 644588234657084,
-					"parameters": {
-						"text": "Informacoes_artefato.At(index_informação)"
-					}
-				}
-			],
-			"sid": 403946254129567
 		},
 		{
 			"eventType": "block",

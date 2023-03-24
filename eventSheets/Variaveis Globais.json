@@ -148,6 +148,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 617357875122855
+		},
+		{
+			"eventType": "variable",
+			"name": "FINALIZOU",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 736581257564031
 		}
 	],
 	"sid": 935804602281701
