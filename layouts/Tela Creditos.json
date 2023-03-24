@@ -194,12 +194,12 @@
 					"properties": {
 						"text": "VOLTAR",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>Ç",
+						"character-width": 10,
+						"character-height": 13,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						"spacing-data": "",
-						"scale": 1.6,
-						"character-spacing": -2,
+						"scale": 2,
+						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
@@ -214,25 +214,17 @@
 						"acao": "voltar"
 					},
 					"behaviors": {},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
 					"world": {
-						"x": 430.5,
+						"x": 430,
 						"y": 580,
 						"width": 164,
 						"height": 30,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"angle": 0,
@@ -243,7 +235,7 @@
 					"type": "cursor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "parado",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -257,10 +249,10 @@
 					"world": {
 						"x": 420.5,
 						"y": 480,
-						"width": 14,
-						"height": 25,
+						"width": 50,
+						"height": 38,
 						"originX": 1,
-						"originY": 0.6000000000000001,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -276,12 +268,12 @@
 					"properties": {
 						"text": "JOGAR",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>Ç",
+						"character-width": 10,
+						"character-height": 13,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						"spacing-data": "",
-						"scale": 1.6,
-						"character-spacing": -2,
+						"scale": 2,
+						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
@@ -296,25 +288,17 @@
 						"acao": "jogar"
 					},
 					"behaviors": {},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
 					"world": {
-						"x": 430,
+						"x": 429.5,
 						"y": 480,
 						"width": 164,
 						"height": 30,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"angle": 0,
