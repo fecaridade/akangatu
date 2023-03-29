@@ -502,7 +502,14 @@
 		}
 	],
 	"sid": 263079993750373,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "figurinhas",
+			"properties": {},
+			"uid": 772,
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1024,
 	"height": 1088,
