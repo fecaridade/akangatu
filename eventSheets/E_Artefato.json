@@ -12,11 +12,92 @@
 			],
 			"actions": [
 				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 781704498503309,
+					"parameters": {
+						"key": "\"Anta\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 212133004174634,
+					"parameters": {
+						"key": "\"Cocar\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 406024816213707,
+					"parameters": {
+						"key": "\"Colar\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 157509698528751,
+					"parameters": {
+						"key": "\"Coroa\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 396291096694573,
+					"parameters": {
+						"key": "\"Flauta\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 713671254095352,
+					"parameters": {
+						"key": "\"Felino\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 213375768822133,
+					"parameters": {
+						"key": "\"Macara\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 727882830531924,
+					"parameters": {
+						"key": "\"Tanga\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 422267232491447,
+					"parameters": {
+						"key": "\"Vasos\"",
+						"value": "0"
+					}
+				},
+				{
 					"id": "set-size",
 					"objectClass": "Informacoes_artefato",
-					"sid": 449469590558942,
+					"sid": 643167730122424,
 					"parameters": {
-						"width": "5",
+						"width": "9",
 						"height": "1",
 						"depth": "1"
 					}
@@ -67,6 +148,42 @@
 					}
 				},
 				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 887727755340639,
+					"parameters": {
+						"x": "5",
+						"value": "\"Informações do artefato\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 874377957164646,
+					"parameters": {
+						"x": "6",
+						"value": "\"Informações do artefato\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 643643730580662,
+					"parameters": {
+						"x": "7",
+						"value": "\"Informações do artefato\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Informacoes_artefato",
+					"sid": 888414340584492,
+					"parameters": {
+						"x": "8",
+						"value": "\"Informações do artefato\""
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "itemAchado",
 					"sid": 987612547182568,
@@ -101,6 +218,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "download",
+					"objectClass": "figurinhas",
+					"sid": 189892926023456,
+					"parameters": {
+						"filename": "\"figurinhas.json\""
+					}
 				}
 			],
 			"sid": 690114501721397
@@ -118,9 +243,9 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "itemAchado",
-							"sid": 870770516456632,
+							"sid": 576035194372294,
 							"parameters": {
-								"animation": "\"Flauta\""
+								"animation": "\"Anta\""
 							}
 						}
 					],
@@ -133,6 +258,23 @@
 								"variable": "index_informação",
 								"value": "0"
 							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 352328122275981,
+							"parameters": {
+								"path": "\"Anta\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 793118412174039,
+							"parameters": {
+								"key": "\"Anta\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
 						}
 					],
 					"sid": 288559380635536
@@ -143,9 +285,9 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "itemAchado",
-							"sid": 964350858678050,
+							"sid": 213139696962220,
 							"parameters": {
-								"animation": "\"Mascara\""
+								"animation": "\"Cocar\""
 							}
 						}
 					],
@@ -158,6 +300,23 @@
 								"variable": "index_informação",
 								"value": "1"
 							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 926507134840578,
+							"parameters": {
+								"path": "\"Cocar\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 949763789441567,
+							"parameters": {
+								"key": "\"Cocar\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
 						}
 					],
 					"sid": 238886204242101
@@ -168,9 +327,9 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "itemAchado",
-							"sid": 623260187902642,
+							"sid": 373669396828667,
 							"parameters": {
-								"animation": "\"Cocar\""
+								"animation": "\"Colar\""
 							}
 						}
 					],
@@ -183,6 +342,23 @@
 								"variable": "index_informação",
 								"value": "2"
 							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 693359948946562,
+							"parameters": {
+								"path": "\"Colar\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 302731180857172,
+							"parameters": {
+								"key": "\"Colar\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
 						}
 					],
 					"sid": 737382228167948
@@ -193,9 +369,9 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "itemAchado",
-							"sid": 173050022767204,
+							"sid": 477453058644935,
 							"parameters": {
-								"animation": "\"Vasos\""
+								"animation": "\"Coroa\""
 							}
 						}
 					],
@@ -208,6 +384,23 @@
 								"variable": "index_informação",
 								"value": "3"
 							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 694631526157303,
+							"parameters": {
+								"path": "\"Coroa\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 209028851260652,
+							"parameters": {
+								"key": "\"Anta\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
 						}
 					],
 					"sid": 802689293029521
@@ -218,9 +411,9 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "itemAchado",
-							"sid": 949145271339895,
+							"sid": 841943849014633,
 							"parameters": {
-								"animation": "\"Colar\""
+								"animation": "\"Flauta\""
 							}
 						}
 					],
@@ -233,16 +426,201 @@
 								"variable": "index_informação",
 								"value": "4"
 							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 816993051400015,
+							"parameters": {
+								"path": "\"Flauta\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 126148763820162,
+							"parameters": {
+								"key": "\"Flauta\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
 						}
 					],
 					"sid": 612008041892778
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "itemAchado",
+							"sid": 393783644541328,
+							"parameters": {
+								"animation": "\"Felino\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 813046426467430,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "5"
+							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 789779096786178,
+							"parameters": {
+								"path": "\"Felino\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 454421504834941,
+							"parameters": {
+								"key": "\"Felino\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
+						}
+					],
+					"sid": 381927400330594
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "itemAchado",
+							"sid": 112283357107385,
+							"parameters": {
+								"animation": "\"Mascara\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 602105317957909,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "6"
+							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 843303269987000,
+							"parameters": {
+								"path": "\"Mascara\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 904865981580473,
+							"parameters": {
+								"key": "\"Mascara\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
+						}
+					],
+					"sid": 691644010121774
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "itemAchado",
+							"sid": 878906438092979,
+							"parameters": {
+								"animation": "\"Tanga\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 788763988530822,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "7"
+							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 463490572991267,
+							"parameters": {
+								"path": "\"Tanga\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 478986607734702,
+							"parameters": {
+								"key": "\"Tanga\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
+						}
+					],
+					"sid": 461922989820162
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "itemAchado",
+							"sid": 163791342043071,
+							"parameters": {
+								"animation": "\"Vasos\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 153551314238570,
+							"parameters": {
+								"variable": "index_informação",
+								"value": "8"
+							}
+						},
+						{
+<<<<<<< HEAD
+							"id": "set-value",
+							"objectClass": "json_figurinhas",
+							"sid": 991368663951433,
+							"parameters": {
+								"path": "\"Vasos\"",
+=======
+							"id": "set-key",
+							"objectClass": "figurinhas",
+							"sid": 846669272827714,
+							"parameters": {
+								"key": "\"Vasos\"",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+								"value": "1"
+							}
+						}
+					],
+					"sid": 892133073949876
+				},
+				{
 					"functionName": "Seta_nome_peça",
+					"functionCopyPicked": false,
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
-					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",
@@ -261,10 +639,10 @@
 				},
 				{
 					"functionName": "remove_artefato",
+					"functionCopyPicked": false,
 					"functionDescription": "",
 					"functionCategory": "",
 					"functionReturnType": "none",
-					"functionCopyPicked": false,
 					"functionIsAsync": false,
 					"functionParameters": [],
 					"eventType": "function-block",

@@ -1,0 +1,69 @@
+{
+	"name": "E_Figurinhas",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 452579427938273
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 889014115874479,
+					"parameters": {
+						"tag": "\"figurinhas\"",
+						"file": "figurinhas.json"
+					}
+				}
+			],
+			"sid": 881685198708496
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 636515101771552,
+					"parameters": {
+						"tag": "\"figurinhas\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 331831565125645,
+					"parameters": {
+						"seconds": "0.05"
+					}
+				},
+				{
+					"id": "parse",
+					"objectClass": "json_figurinhas",
+					"sid": 678771265330754,
+					"parameters": {
+						"data": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "json_figurinhas",
+					"sid": 146684833952419,
+					"parameters": {
+						"instance-variable": "onComplete",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 993387027787706
+		}
+	],
+	"sid": 808217697786381
+}

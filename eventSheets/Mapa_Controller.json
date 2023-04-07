@@ -2,6 +2,10 @@
 	"name": "Mapa_Controller",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "E_Figurinhas"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1509,9 +1513,9 @@
 				{
 					"id": "set-image-offset-x",
 					"objectClass": "laterais_background",
-					"sid": 596526615385428,
+					"sid": 701406601039413,
 					"parameters": {
-						"offset-x": "-100*time"
+						"offset-x": "-60*time"
 					}
 				}
 			],

@@ -58,14 +58,6 @@
 							}
 						},
 						{
-							"id": "set-text",
-							"objectClass": "cronometroFases",
-							"sid": 844816834344158,
-							"parameters": {
-								"text": "Cronometro|\"\""
-							}
-						},
-						{
 							"id": "set-ignoring-input",
 							"objectClass": "Player",
 							"sid": 379801722144334,
@@ -103,14 +95,6 @@
 							"parameters": {
 								"variable": "Cronometro",
 								"value": "1"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "cronometroFases",
-							"sid": 951149702713566,
-							"parameters": {
-								"text": "Cronometro"
 							}
 						},
 						{
@@ -182,7 +166,7 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "pilha_terra",
-									"sid": 250064681797112,
+									"sid": 470303696760120,
 									"parameters": {
 										"instance-variable": "Item",
 										"comparison": 0,
@@ -190,22 +174,41 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 982857543992177,
+							"children": [
 								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 731591803795920,
-									"parameters": {
-										"type": "log",
-										"message": "\"Achou o Tesouro\""
-									}
-								},
-								{
-									"callFunction": "Achou_Tesouro",
-									"sid": 562178951418994
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-value",
+											"objectClass": "json_figurinhas",
+											"sid": 951644847975337,
+											"parameters": {
+												"path": "Informacoes_artefato.At(index_informação)",
+												"cmp": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "log",
+											"objectClass": "Browser",
+											"sid": 742096322793444,
+											"parameters": {
+												"type": "log",
+												"message": "\"Achou o Tesouro\""
+											}
+										},
+										{
+											"callFunction": "Achou_Tesouro",
+											"sid": 365585116187373
+										}
+									],
+									"sid": 908394111721255
 								}
-							],
-							"sid": 596296621976612
+							]
 						},
 						{
 							"eventType": "block",
@@ -325,14 +328,6 @@
 					"parameters": {
 						"instance-variable": "estado_tempo",
 						"value": "1"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "cronometroFases",
-					"sid": 643753364022432,
-					"parameters": {
-						"text": "Cronometro"
 					}
 				}
 			],
