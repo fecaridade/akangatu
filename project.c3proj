@@ -1,11 +1,18 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 32703,
+	"savedWithRelease": 33600,
 	"name": "akangatu",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
 		{
 			"type": "plugin",
 			"id": "Arr",
@@ -24,6 +31,18 @@
 			"type": "plugin",
 			"id": "Browser",
 			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+<<<<<<< HEAD
+			"id": "Json",
+			"name": "JSON",
+=======
+			"id": "Dictionary",
+			"name": "Dictionary",
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -191,7 +210,13 @@
 			"buff_debuff_old",
 			"op",
 			"terreno_fundo",
-			"opcoesMenu2"
+			"opcoesMenu2",
+<<<<<<< HEAD
+			"AJAX",
+			"json_figurinhas"
+=======
+			"figurinhas"
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 		],
 		"subfolders": []
 	},
@@ -227,7 +252,8 @@
 			"Variaveis Globais",
 			"Game_Manager",
 			"Teste Jogo",
-			"E_Artefato"
+			"E_Artefato",
+			"E_Figurinhas"
 		],
 		"subfolders": []
 	},
@@ -347,7 +373,16 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "figurinhas.json",
+					"type": "application/json",
+					"sid": 816126030667020,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},

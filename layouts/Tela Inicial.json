@@ -33,9 +33,9 @@
 							"instanceVariables": {},
 							"behaviors": {},
 							"world": {
-								"x": -888,
+								"x": -2288,
 								"y": -256,
-								"width": 2800,
+								"width": 5600,
 								"height": 1600,
 								"originX": 0,
 								"originY": 0,
@@ -43,7 +43,7 @@
 									1,
 									1,
 									1,
-									1
+									0.75
 								],
 								"angle": 0,
 								"zElevation": 0
@@ -103,35 +103,6 @@
 							0.9333333333333333,
 							0.6274509803921569,
 							0.6274509803921569,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "op",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 986,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 517,
-						"y": 1655,
-						"width": 46,
-						"height": 14,
-						"originX": 0.5217391304347826,
-						"originY": 0.35714285714285715,
-						"color": [
-							1,
-							1,
-							1,
 							1
 						],
 						"angle": 0,
@@ -502,7 +473,23 @@
 		}
 	],
 	"sid": 263079993750373,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+<<<<<<< HEAD
+			"type": "json_figurinhas",
+			"properties": {},
+			"uid": 956,
+			"instanceVariables": {
+				"onComplete": false
+			}
+=======
+			"type": "figurinhas",
+			"properties": {},
+			"uid": 772,
+			"instanceVariables": {}
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+		}
+	],
 	"effectTypes": [],
 	"width": 1024,
 	"height": 1088,

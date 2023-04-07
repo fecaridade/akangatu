@@ -3,10 +3,10 @@
 	"events": [
 		{
 			"functionName": "Sorteia Lugar Terreno",
+			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
-			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
@@ -52,7 +52,7 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 838888637520671,
+											"sid": 795500223734909,
 											"parameters": {
 												"variable": "auxiliar_escolhido",
 												"comparison": 0,
@@ -64,7 +64,7 @@
 										{
 											"id": "set-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 773427369667785,
+											"sid": 886986595285892,
 											"parameters": {
 												"variable": "Tesouro_Escolhido",
 												"value": "true"
@@ -73,14 +73,14 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "pilha_terra",
-											"sid": 897553776491263,
+											"sid": 950271037533234,
 											"parameters": {
 												"instance-variable": "ja_sorteado",
 												"value": "true"
 											}
 										}
 									],
-									"sid": 388261035052524
+									"sid": 213455757883266
 								},
 								{
 									"eventType": "block",
@@ -88,7 +88,7 @@
 										{
 											"id": "compare-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 160616031898352,
+											"sid": 227061541858298,
 											"parameters": {
 												"variable": "Tesouro_Escolhido"
 											},
@@ -99,7 +99,7 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 518606937438506,
+											"sid": 965844062301551,
 											"parameters": {
 												"variable": "auxiliar_escolhido",
 												"value": "choose(1,2,3,3,4,4)"
@@ -108,7 +108,7 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "pilha_terra",
-											"sid": 762086005231976,
+											"sid": 965991743723020,
 											"parameters": {
 												"instance-variable": "Item",
 												"value": "auxiliar_escolhido"
@@ -117,14 +117,14 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "pilha_terra",
-											"sid": 863143772643059,
+											"sid": 874224932319459,
 											"parameters": {
 												"instance-variable": "ja_sorteado",
 												"value": "true"
 											}
 										}
 									],
-									"sid": 391995261598155,
+									"sid": 500036176663090,
 									"isOrBlock": true
 								},
 								{
@@ -133,7 +133,7 @@
 										{
 											"id": "compare-boolean-eventvar",
 											"objectClass": "System",
-											"sid": 670310516249139,
+											"sid": 943126667132035,
 											"parameters": {
 												"variable": "Tesouro_Escolhido"
 											}
@@ -143,7 +143,7 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 222848814448339,
+											"sid": 934925327978685,
 											"parameters": {
 												"variable": "auxiliar_escolhido",
 												"value": "choose(2,3,4)"
@@ -152,7 +152,7 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "pilha_terra",
-											"sid": 694637883138679,
+											"sid": 814880136179014,
 											"parameters": {
 												"instance-variable": "Item",
 												"value": "auxiliar_escolhido"
@@ -161,14 +161,14 @@
 										{
 											"id": "set-boolean-instvar",
 											"objectClass": "pilha_terra",
-											"sid": 170234937634156,
+											"sid": 279631518561412,
 											"parameters": {
 												"instance-variable": "ja_sorteado",
 												"value": "true"
 											}
 										}
 									],
-									"sid": 430181421832188,
+									"sid": 585596103706335,
 									"isOrBlock": true
 								}
 							]
@@ -179,48 +179,31 @@
 		},
 		{
 			"functionName": "Achou_Tesouro",
+			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
-			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [
 				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player",
+					"sid": 232011229710893,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 992495601320480,
+					"sid": 805374248922949,
 					"parameters": {
 						"variable": "Tipo_Tesouro",
-						"value": "choose(\"Flauta\", \"Mascara\", \"Cocar\", \"Vasos\", \"Colar\")"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 362402615496404,
-					"parameters": {
-						"object-to-create": "Fundo_Vitoria",
-						"layer": "4",
-						"x": "300",
-						"y": "200",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 277419838394941,
-					"parameters": {
-						"object-to-create": "itemAchado",
-						"layer": "4",
-						"x": "300",
-						"y": "200",
-						"create-hierarchy": false,
-						"template-name": "\"\""
+						"value": "choose(\"Anta\", \"Cocar\", \"Colar\", \"Coroa\", \"Flauta\", \"Felino\", \"Mascara\", \"Tanga\", \"Vasos\")"
 					}
 				},
 				{
@@ -245,23 +228,6 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "Fundo_Vitoria",
-					"sid": 816271377918679,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "Player",
-					"sid": 842163164619716,
-					"behaviorType": "TileMovement",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				},
-				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 403434635747903,
@@ -282,10 +248,10 @@
 		},
 		{
 			"functionName": "Quebrou_Terreno",
+			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
-			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [
 				{
@@ -372,10 +338,10 @@
 		},
 		{
 			"functionName": "buff_tempo",
+			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
-			"functionCopyPicked": false,
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
@@ -420,6 +386,117 @@
 					"sid": 668896675691937
 				}
 			]
+		},
+		{
+			"functionName": "game_reset",
+<<<<<<< HEAD
+			"functionCopyPicked": false,
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+=======
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+<<<<<<< HEAD
+			"actions": [],
+=======
+			"actions": [
+				{
+					"id": "clear",
+					"objectClass": "figurinhas",
+					"sid": 803830012123302
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 365152438811990,
+					"parameters": {
+						"key": "\"Anta\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 940098163410386,
+					"parameters": {
+						"key": "\"Cocar\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 383259076717668,
+					"parameters": {
+						"key": "\"Colar\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 341062374185490,
+					"parameters": {
+						"key": "\"Coroa\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 527342194568722,
+					"parameters": {
+						"key": "\"Flauta\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 594744983041213,
+					"parameters": {
+						"key": "\"Felino\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 241168864981046,
+					"parameters": {
+						"key": "\"Macara\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 888534558189084,
+					"parameters": {
+						"key": "\"Tanga\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "figurinhas",
+					"sid": 772702392112587,
+					"parameters": {
+						"key": "\"Vasos\"",
+						"value": "0"
+					}
+				}
+			],
+>>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+			"sid": 871377012273954
 		}
 	],
 	"sid": 445023835263366

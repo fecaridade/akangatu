@@ -1,0 +1,15 @@
+{
+	"name": "json_figurinhas",
+	"plugin-id": "Json",
+	"sid": 390326437146586,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "onComplete",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 445092638834848
+		}
+	]
+}
