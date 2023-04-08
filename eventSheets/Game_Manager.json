@@ -189,18 +189,59 @@
 			"conditions": [],
 			"actions": [
 				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 708908911661493,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
 					"id": "set-ignoring-input",
 					"objectClass": "Player",
-					"sid": 232011229710893,
+					"sid": 113010232625801,
 					"behaviorType": "TileMovement",
 					"parameters": {
 						"input": "start-ignoring"
 					}
 				},
 				{
+					"id": "stop-animation",
+					"objectClass": "Player",
+					"sid": 496907557104987
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 563534399611238,
+					"parameters": {
+						"animation": "\"Achando\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "tween_ref",
+					"sid": 139554155478733,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "itemAchado",
+					"sid": 575266925283557,
+					"parameters": {
+						"x": "Player.X +70",
+						"y": "Player.Y + 60"
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 805374248922949,
+					"sid": 905395432107278,
 					"parameters": {
 						"variable": "Tipo_Tesouro",
 						"value": "choose(\"Anta\", \"Cocar\", \"Colar\", \"Coroa\", \"Flauta\", \"Felino\", \"Mascara\", \"Tanga\", \"Vasos\")"
@@ -209,7 +250,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "itemAchado",
-					"sid": 550475620732135,
+					"sid": 811725376693664,
 					"parameters": {
 						"animation": "Tipo_Tesouro",
 						"from": "beginning"
@@ -218,7 +259,7 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 914995178679627,
+					"sid": 887817164236361,
 					"parameters": {
 						"audio-file": "achou_tesouro",
 						"loop": "not-looping",
@@ -228,11 +269,60 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "itemAchado",
+					"sid": 692574659852973,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 403434635747903,
+					"sid": 304375078770179,
 					"parameters": {
-						"seconds": "1"
+						"seconds": "0.8"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "itemAchado",
+					"sid": 578512485851756,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "tween_ref",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "tween_ref",
+					"sid": 365095230369587,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "448",
+						"end-y": "384",
+						"time": "1.2",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 764416408276239,
+					"parameters": {
+						"seconds": "1.3"
 					}
 				},
 				{
@@ -389,24 +479,14 @@
 		},
 		{
 			"functionName": "game_reset",
-<<<<<<< HEAD
 			"functionCopyPicked": false,
 			"functionDescription": "",
 			"functionCategory": "",
 			"functionReturnType": "none",
-=======
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 			"functionIsAsync": false,
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-<<<<<<< HEAD
-			"actions": [],
-=======
 			"actions": [
 				{
 					"id": "clear",
@@ -495,7 +575,6 @@
 					}
 				}
 			],
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 			"sid": 871377012273954
 		}
 	],

@@ -36,13 +36,15 @@
 		},
 		{
 			"type": "plugin",
-<<<<<<< HEAD
-			"id": "Json",
-			"name": "JSON",
-=======
 			"id": "Dictionary",
 			"name": "Dictionary",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -211,12 +213,10 @@
 			"op",
 			"terreno_fundo",
 			"opcoesMenu2",
-<<<<<<< HEAD
+			"figurinhas",
 			"AJAX",
-			"json_figurinhas"
-=======
-			"figurinhas"
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
+			"fig",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -404,13 +404,13 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": true,
+		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "scale-outer",
-		"fullscreenQuality": "high",
-		"viewportFit": "auto",
+		"fullscreenQuality": "low",
+		"viewportFit": "cover",
 		"backgroundColor": [
 			0,
 			0,
@@ -432,13 +432,13 @@
 		],
 		"orientations": "landscape",
 		"webgpu": "auto",
-		"gpuPreference": "high-performance",
+		"gpuPreference": "default",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "nearest",
-		"downscaling": "medium",
-		"renderingMode": "auto",
+		"downscaling": "low",
+		"renderingMode": "2d",
 		"anisotropicFiltering": "auto",
 		"zNear": 1,
 		"zFar": 10000,

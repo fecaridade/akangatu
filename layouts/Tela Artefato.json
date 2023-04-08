@@ -159,7 +159,13 @@
 					"instanceVariables": {
 						"ItemAchado": ""
 					},
-					"behaviors": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
 					"world": {
 						"x": 512,
 						"y": 364,

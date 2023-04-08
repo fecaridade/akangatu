@@ -46,7 +46,7 @@
 				},
 				{
 					"id": "parse",
-					"objectClass": "json_figurinhas",
+					"objectClass": "fig",
 					"sid": 678771265330754,
 					"parameters": {
 						"data": "AJAX.LastData"
@@ -54,7 +54,7 @@
 				},
 				{
 					"id": "set-boolean-instvar",
-					"objectClass": "json_figurinhas",
+					"objectClass": "fig",
 					"sid": 146684833952419,
 					"parameters": {
 						"instance-variable": "onComplete",

@@ -12,87 +12,6 @@
 			],
 			"actions": [
 				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 781704498503309,
-					"parameters": {
-						"key": "\"Anta\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 212133004174634,
-					"parameters": {
-						"key": "\"Cocar\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 406024816213707,
-					"parameters": {
-						"key": "\"Colar\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 157509698528751,
-					"parameters": {
-						"key": "\"Coroa\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 396291096694573,
-					"parameters": {
-						"key": "\"Flauta\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 713671254095352,
-					"parameters": {
-						"key": "\"Felino\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 213375768822133,
-					"parameters": {
-						"key": "\"Macara\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 727882830531924,
-					"parameters": {
-						"key": "\"Tanga\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "add-key",
-					"objectClass": "figurinhas",
-					"sid": 422267232491447,
-					"parameters": {
-						"key": "\"Vasos\"",
-						"value": "0"
-					}
-				},
-				{
 					"id": "set-size",
 					"objectClass": "Informacoes_artefato",
 					"sid": 643167730122424,
@@ -218,14 +137,6 @@
 					"parameters": {
 						"visibility": "visible"
 					}
-				},
-				{
-					"id": "download",
-					"objectClass": "figurinhas",
-					"sid": 189892926023456,
-					"parameters": {
-						"filename": "\"figurinhas.json\""
-					}
 				}
 			],
 			"sid": 690114501721397
@@ -260,19 +171,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 352328122275981,
 							"parameters": {
 								"path": "\"Anta\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 793118412174039,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Anta\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -302,19 +215,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 926507134840578,
 							"parameters": {
 								"path": "\"Cocar\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 949763789441567,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Cocar\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -344,19 +259,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 693359948946562,
 							"parameters": {
 								"path": "\"Colar\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 302731180857172,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Colar\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -386,19 +303,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 694631526157303,
 							"parameters": {
 								"path": "\"Coroa\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 209028851260652,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Anta\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -428,19 +347,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 816993051400015,
 							"parameters": {
 								"path": "\"Flauta\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 126148763820162,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Flauta\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -470,19 +391,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 789779096786178,
 							"parameters": {
 								"path": "\"Felino\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 454421504834941,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Felino\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -512,19 +435,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 843303269987000,
 							"parameters": {
 								"path": "\"Mascara\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 904865981580473,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Mascara\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -554,19 +479,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 463490572991267,
 							"parameters": {
 								"path": "\"Tanga\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 478986607734702,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Tanga\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}
@@ -596,19 +523,21 @@
 							}
 						},
 						{
-<<<<<<< HEAD
 							"id": "set-value",
-							"objectClass": "json_figurinhas",
+							"objectClass": "fig",
 							"sid": 991368663951433,
 							"parameters": {
 								"path": "\"Vasos\"",
-=======
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-key",
 							"objectClass": "figurinhas",
 							"sid": 846669272827714,
+							"disabled": true,
 							"parameters": {
 								"key": "\"Vasos\"",
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 								"value": "1"
 							}
 						}

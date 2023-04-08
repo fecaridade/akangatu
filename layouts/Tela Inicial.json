@@ -81,7 +81,7 @@
 			],
 			"instances": [
 				{
-					"type": "inicial_background",
+					"type": "Sprite",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -89,21 +89,21 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 418,
+					"uid": 954,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 512,
-						"y": 544,
-						"width": 1024,
-						"height": 1088,
+						"x": 492,
+						"y": 548,
+						"width": 2252.4,
+						"height": 1090,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
-							0.9333333333333333,
-							0.6274509803921569,
-							0.6274509803921569,
-							1
+							1,
+							1,
+							1,
+							0.95
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -144,41 +144,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "nome_akangatu",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 849,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"world": {
-						"x": 512,
-						"y": -165,
-						"width": 393.75,
-						"height": 114,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "tween_ref",
 					"properties": {
 						"initially-visible": false,
@@ -197,8 +162,8 @@
 						}
 					},
 					"world": {
-						"x": 512,
-						"y": -158,
+						"x": 705,
+						"y": -121,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
@@ -229,10 +194,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 409.7546727220606,
-						"y": 580,
-						"width": 50,
-						"height": 38,
+						"x": 755,
+						"y": 624,
+						"width": 129,
+						"height": 108,
 						"originX": 1,
 						"originY": 0.5,
 						"color": [
@@ -254,7 +219,7 @@
 						"character-height": 13,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						"spacing-data": "",
-						"scale": 2,
+						"scale": 5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -271,10 +236,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 420.4999789343942,
-						"y": 580,
-						"width": 175,
-						"height": 30,
+						"x": 783,
+						"y": 633,
+						"width": 333,
+						"height": 91,
 						"originX": 0,
 						"originY": 0.5,
 						"color": [
@@ -296,7 +261,7 @@
 						"character-height": 13,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						"spacing-data": "",
-						"scale": 2,
+						"scale": 5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -313,11 +278,46 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 411.9999789343942,
-						"y": 680,
-						"width": 200,
-						"height": 30,
+						"x": 768,
+						"y": 750,
+						"width": 447,
+						"height": 109,
 						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "nome_akangatu",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 849,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1070,
+						"y": -136,
+						"width": 647.75,
+						"height": 125.00000000000001,
+						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -412,35 +412,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "background_ui",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 31,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 768,
-						"y": -128,
-						"width": 1024,
-						"height": 64,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 947739482511538,
@@ -475,19 +446,18 @@
 	"sid": 263079993750373,
 	"nonworld-instances": [
 		{
-<<<<<<< HEAD
-			"type": "json_figurinhas",
+			"type": "figurinhas",
+			"properties": {},
+			"uid": 772,
+			"instanceVariables": {}
+		},
+		{
+			"type": "fig",
 			"properties": {},
 			"uid": 956,
 			"instanceVariables": {
 				"onComplete": false
 			}
-=======
-			"type": "figurinhas",
-			"properties": {},
-			"uid": 772,
-			"instanceVariables": {}
->>>>>>> 4b542e50c0e223417d9e7a9f8d654f00d0f9a259
 		}
 	],
 	"effectTypes": [],
