@@ -1157,6 +1157,22 @@
 							"objectClass": "Fade",
 							"sid": 283800269846152,
 							"behaviorType": "Fade_Start"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 204637160357226,
+							"parameters": {
+								"seconds": "60"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 941843979599366,
+							"parameters": {
+								"layout": "Tela Inicial"
+							}
 						}
 					],
 					"sid": 368188307062960

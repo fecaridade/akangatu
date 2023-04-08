@@ -182,7 +182,7 @@
 									"conditions": [
 										{
 											"id": "compare-value",
-											"objectClass": "fig",
+											"objectClass": "figurinhas_json",
 											"sid": 951644847975337,
 											"parameters": {
 												"path": "Informacoes_artefato.At(index_informação)",

@@ -12,97 +12,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-size",
-					"objectClass": "Informacoes_artefato",
-					"sid": 643167730122424,
-					"parameters": {
-						"width": "9",
-						"height": "1",
-						"depth": "1"
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 148274251721790,
-					"parameters": {
-						"x": "0",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 804883454611670,
-					"parameters": {
-						"x": "1",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 204550326054322,
-					"parameters": {
-						"x": "2",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 529053904267818,
-					"parameters": {
-						"x": "3",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 213748243253809,
-					"parameters": {
-						"x": "4",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 887727755340639,
-					"parameters": {
-						"x": "5",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 874377957164646,
-					"parameters": {
-						"x": "6",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 643643730580662,
-					"parameters": {
-						"x": "7",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
-					"id": "set-at-x",
-					"objectClass": "Informacoes_artefato",
-					"sid": 888414340584492,
-					"parameters": {
-						"x": "8",
-						"value": "\"Informações do artefato\""
-					}
-				},
-				{
 					"id": "set-animation",
 					"objectClass": "itemAchado",
 					"sid": 987612547182568,
@@ -172,7 +81,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 352328122275981,
 							"parameters": {
 								"path": "\"Anta\"",
@@ -180,13 +89,19 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 793118412174039,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 549015969247928,
 							"parameters": {
-								"key": "\"Anta\"",
-								"value": "1"
+								"text": "\"Anta\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 671852308454554,
+							"parameters": {
+								"text": "\"Feita em borracha, com motivos florais estilizados. Provavelmente de povo indígena do Pará. Coletada no séc. XVIII. Acervo do Museu da Ciência da Universidade de Coimbra (ANT.Br.60).\""
 							}
 						}
 					],
@@ -216,7 +131,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 926507134840578,
 							"parameters": {
 								"path": "\"Cocar\"",
@@ -224,13 +139,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 949763789441567,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 439798168181859,
 							"parameters": {
-								"key": "\"Cocar\"",
-								"value": "1"
+								"text": "\"Cocar\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 551658596479463,
+							"parameters": {
+								"text": "\"Feito de algodão e penas, originado do Rio Grande do Norte. Coletado no século XXI.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 883588890881227,
+							"parameters": {
+								"text": "\"MCC A 166.01\""
 							}
 						}
 					],
@@ -260,7 +189,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 693359948946562,
 							"parameters": {
 								"path": "\"Colar\"",
@@ -268,13 +197,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 302731180857172,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 168724465894311,
 							"parameters": {
-								"key": "\"Colar\"",
-								"value": "1"
+								"text": "\"Colar\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 378823299053913,
+							"parameters": {
+								"text": "\"De etnia Tukuna, da Amazônia Ocidental, feito com cascas de coco e sementes. Coletado no século XX.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 287913003636768,
+							"parameters": {
+								"text": "\"MCC A 035/04\""
 							}
 						}
 					],
@@ -304,7 +247,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 694631526157303,
 							"parameters": {
 								"path": "\"Coroa\"",
@@ -312,13 +255,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 209028851260652,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 114574171239563,
 							"parameters": {
-								"key": "\"Anta\"",
-								"value": "1"
+								"text": "\"Coifa\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 752582633609473,
+							"parameters": {
+								"text": "\"De etnia Karajá, feita de penas e fibra vegetal.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 849412738232170,
+							"parameters": {
+								"text": "\"MCC A 242\""
 							}
 						}
 					],
@@ -348,7 +305,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 816993051400015,
 							"parameters": {
 								"path": "\"Flauta\"",
@@ -356,13 +313,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 126148763820162,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 573112987458809,
 							"parameters": {
-								"key": "\"Flauta\"",
-								"value": "1"
+								"text": "\"Flauta\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 791976871986777,
+							"parameters": {
+								"text": "\"De etnia Bororo, do Mato Grosso, feita em bambu e ornada com linhas e penas. Coletada no século XX.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 793181493926046,
+							"parameters": {
+								"text": "\"MCC A 060\""
 							}
 						}
 					],
@@ -392,7 +363,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 789779096786178,
 							"parameters": {
 								"path": "\"Felino\"",
@@ -400,13 +371,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 454421504834941,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 697991425643556,
 							"parameters": {
-								"key": "\"Felino\"",
-								"value": "1"
+								"text": "\"Totem Indígena\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 395210454935357,
+							"parameters": {
+								"text": "\"De etnia Tukuna, da Amazônia Ocidental, em madeira laqueada, representando um felino. Peça usada em festas e rituais. Coletada no século XX.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 535702339027670,
+							"parameters": {
+								"text": "\"MCC A 049/07\""
 							}
 						}
 					],
@@ -436,7 +421,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 843303269987000,
 							"parameters": {
 								"path": "\"Mascara\"",
@@ -444,13 +429,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 904865981580473,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 275798288825381,
 							"parameters": {
-								"key": "\"Mascara\"",
-								"value": "1"
+								"text": "\"Máscara\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 105191926508696,
+							"parameters": {
+								"text": "\"De etnia Tukuna, da Amazônia Ocidental, em casca de tururi. Usada em ritos de passagem (festa da moça nova). Coletada no século XX.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 606009186670211,
+							"parameters": {
+								"text": "\"MCC A 041/03\""
 							}
 						}
 					],
@@ -480,7 +479,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 463490572991267,
 							"parameters": {
 								"path": "\"Tanga\"",
@@ -488,13 +487,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 478986607734702,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 627651306470772,
 							"parameters": {
-								"key": "\"Tanga\"",
-								"value": "1"
+								"text": "\"Tanga\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 959914447425345,
+							"parameters": {
+								"text": "\"De etnia Aramagoto, do oeste do Alto Amazonas, feito com fibra vegetal, miçangas e sementes diversas. Peça usada em rituais e cerimônias. Coletada no século XX.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 220778119169107,
+							"parameters": {
+								"text": "\"MCC A 019\""
 							}
 						}
 					],
@@ -524,7 +537,7 @@
 						},
 						{
 							"id": "set-value",
-							"objectClass": "fig",
+							"objectClass": "figurinhas_json",
 							"sid": 991368663951433,
 							"parameters": {
 								"path": "\"Vasos\"",
@@ -532,13 +545,27 @@
 							}
 						},
 						{
-							"id": "set-key",
-							"objectClass": "figurinhas",
-							"sid": 846669272827714,
-							"disabled": true,
+							"id": "set-text",
+							"objectClass": "nome_artefato",
+							"sid": 234051694717531,
 							"parameters": {
-								"key": "\"Vasos\"",
-								"value": "1"
+								"text": "\"Jarro\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "descricao_artefato",
+							"sid": 907528958590756,
+							"parameters": {
+								"text": "\"De etnia Baniwa, do noroeste da Amazônia, feito em cerâmica. Coletado no século XX.\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "registro",
+							"sid": 850819410561642,
+							"parameters": {
+								"text": "\"MCC A 004.07\""
 							}
 						}
 					],

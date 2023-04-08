@@ -43,7 +43,7 @@
 									1,
 									1,
 									1,
-									0.75
+									0.7
 								],
 								"angle": 0,
 								"zElevation": 0
@@ -279,7 +279,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 768,
-						"y": 750,
+						"y": 793,
 						"width": 447,
 						"height": 109,
 						"originX": 0,
@@ -446,13 +446,7 @@
 	"sid": 263079993750373,
 	"nonworld-instances": [
 		{
-			"type": "figurinhas",
-			"properties": {},
-			"uid": 772,
-			"instanceVariables": {}
-		},
-		{
-			"type": "fig",
+			"type": "figurinhas_json",
 			"properties": {},
 			"uid": 956,
 			"instanceVariables": {

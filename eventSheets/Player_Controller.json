@@ -38,6 +38,7 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 673093410210676,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"Andando_costas\"",
 								"from": "beginning"
@@ -46,6 +47,32 @@
 					],
 					"sid": 716486838233702,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 461149954452261,
+									"parameters": {
+										"animation": "\"Achando\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 253842123067908,
+									"parameters": {
+										"animation": "\"Andando_costas\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 930658839705251
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -238,6 +265,7 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 646948273314995,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"Andando_esquerda\"",
 								"from": "beginning"
@@ -246,6 +274,32 @@
 					],
 					"sid": 140544053634623,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 469695983160420,
+									"parameters": {
+										"animation": "\"Achando\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 310958313425196,
+									"parameters": {
+										"animation": "\"Andando_esquerda\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 388470188423628
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -421,6 +475,7 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 144417759180759,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"Andando_frente\"",
 								"from": "beginning"
@@ -429,6 +484,32 @@
 					],
 					"sid": 371562351994165,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 557582449774007,
+									"parameters": {
+										"animation": "\"Achando\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 665002743177801,
+									"parameters": {
+										"animation": "\"Andando_frente\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 269467302949654
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -621,6 +702,7 @@
 							"id": "set-animation",
 							"objectClass": "Player",
 							"sid": 561088903098840,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"Andando_direita\"",
 								"from": "beginning"
@@ -629,6 +711,32 @@
 					],
 					"sid": 607668277131949,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Player",
+									"sid": 509726491662593,
+									"parameters": {
+										"animation": "\"Achando\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 664473344272100,
+									"parameters": {
+										"animation": "\"Andando_direita\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 155454648924469
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -963,6 +1071,31 @@
 						}
 					],
 					"sid": 944050166672470
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 606003317862449,
+							"parameters": {
+								"animation": "\"Achando\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player",
+							"sid": 348859969196221,
+							"behaviorType": "TileMovement",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						}
+					],
+					"sid": 654630185462632
 				}
 			],
 			"sid": 235966712556881

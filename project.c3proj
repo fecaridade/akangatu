@@ -36,13 +36,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Dictionary",
-			"name": "Dictionary",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Json",
 			"name": "JSON",
 			"author": "Scirra",
@@ -175,7 +168,6 @@
 			"itemAchado",
 			"particula_terreno",
 			"Gamepad",
-			"cronometroFases",
 			"game_over_texto",
 			"game_over_background",
 			"texto_game_over",
@@ -213,10 +205,11 @@
 			"op",
 			"terreno_fundo",
 			"opcoesMenu2",
-			"figurinhas",
 			"AJAX",
-			"fig",
-			"Sprite"
+			"figurinhas_json",
+			"Sprite",
+			"descricao_artefato",
+			"registro"
 		],
 		"subfolders": []
 	},
@@ -378,6 +371,22 @@
 					"name": "figurinhas.json",
 					"type": "application/json",
 					"sid": 816126030667020,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "informacoes.json",
+					"type": "application/json",
+					"sid": 176914271460398,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "artefatos.json",
+					"type": "application/json",
+					"sid": 828753634551235,
 					"file-info": {
 						"purpose": "none"
 					}
